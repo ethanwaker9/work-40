@@ -13,7 +13,7 @@ and benchmarks PKX-ML against nine alternative techniques.
 - `cryptography`
 - `matplotlib` (figures only)
 - `kyber-py` (tests only, used as an independent reference for the ML-KEM backend)
-- A TeX installation with `epstopdf` on `PATH` (figures only)
+
 
 Install the Python dependencies with:
 ```
