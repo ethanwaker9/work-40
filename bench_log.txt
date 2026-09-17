@@ -1,0 +1,36 @@
+level 512 done
+level 768 done
+level 1024 done
+  512 KK PKX-ML (ours)    median=  2145.0 p25=  2107.2 p75=  2240.7 bytes= 3104 flows=2 stI=  832 stR=   0 static=  800 retained=  4637 peak= 180401
+  512 KK FO-AKE           median=  2151.3 p25=  2111.7 p75=  2245.4 bytes= 3104 flows=2 stI= 2368 stR=   0 static=  800 retained=  6061 peak= 181109
+  512 KK PQ-WireGuard     median=  2304.8 p25=  2261.5 p75=  2405.2 bytes= 3340 flows=3 stI=  868 stR= 104 static=  832 retained=  5307 peak= 180362
+  512 KK Kyber.AKE        median=  2444.4 p25=  2399.8 p75=  2550.1 bytes= 3104 flows=2 stI= 1664 stR=   0 static=  800 retained=  5228 peak= 180163
+  512 KK KEX-KKE          median=  2445.9 p25=  2398.3 p75=  2549.3 bytes= 3104 flows=2 stI= 1664 stR=   0 static=  800 retained=  5228 peak= 180163
+  512 KK PWZ-AKE          median=  2458.7 p25=  2412.6 p75=  2563.7 bytes= 3104 flows=2 stI= 3232 stR=   0 static=  800 retained=  6950 peak= 180243
+  512 KK PQNoise-KK       median=  2550.7 p25=  2497.1 p75=  2655.5 bytes= 3152 flows=2 stI= 1704 stR=   0 static=  832 retained=  5629 peak= 181497
+  512 XX PKX-ML (ours)    median=  2200.8 p25=  2159.8 p75=  2295.5 bytes= 4704 flows=4 stI=  800 stR=  32 static=  800 retained=  4916 peak= 180514
+  512 XX KEX-TTE          median=  2472.8 p25=  2426.9 p75=  2579.0 bytes= 4704 flows=4 stI= 1632 stR=  32 static=  800 retained=  5643 peak= 180499
+  512 XX PQNoise-XX       median=  2605.3 p25=  2551.8 p75=  2712.2 bytes= 4784 flows=4 stI= 1696 stR= 104 static=  832 retained=  6383 peak= 181006
+  512 XX KEMTLS-mutual    median=  2628.4 p25=  2574.5 p75=  2736.8 bytes= 4932 flows=6 stI= 1768 stR= 200 static=  800 retained=  6745 peak= 180876
+  768 KK PKX-ML (ours)    median=  2889.0 p25=  2764.8 p75=  2926.5 bytes= 4448 flows=2 stI= 1216 stR=   0 static= 1184 retained=  5661 peak= 259416
+  768 KK FO-AKE           median=  2900.1 p25=  2769.7 p75=  2935.0 bytes= 4448 flows=2 stI= 3456 stR=   0 static= 1184 retained=  7789 peak= 261209
+  768 KK PQ-WireGuard     median=  3063.4 p25=  2935.5 p75=  3108.9 bytes= 4684 flows=3 stI= 1252 stR= 104 static= 1216 retained=  6331 peak= 262341
+  768 KK Kyber.AKE        median=  3294.0 p25=  3158.9 p75=  3338.5 bytes= 4448 flows=2 stI= 2432 stR=   0 static= 1184 retained=  6636 peak= 261548
+  768 KK KEX-KKE          median=  3298.0 p25=  3157.9 p75=  3342.0 bytes= 4448 flows=2 stI= 2432 stR=   0 static= 1184 retained=  6636 peak= 260393
+  768 KK PWZ-AKE          median=  3314.2 p25=  3178.5 p75=  3359.3 bytes= 4448 flows=2 stI= 4704 stR=   0 static= 1184 retained=  9062 peak= 262811
+  768 KK PQNoise-KK       median=  3391.0 p25=  3259.9 p75=  3447.0 bytes= 4496 flows=2 stI= 2472 stR=   0 static= 1216 retained=  7037 peak= 260891
+  768 XX PKX-ML (ours)    median=  2835.5 p25=  2797.9 p75=  2971.6 bytes= 6816 flows=4 stI= 1184 stR=  32 static= 1184 retained=  6004 peak= 258594
+  768 XX KEX-TTE          median=  3209.6 p25=  3160.5 p75=  3355.1 bytes= 6816 flows=4 stI= 2400 stR=  32 static= 1184 retained=  7115 peak= 260758
+  768 XX PQNoise-XX       median=  3330.8 p25=  3283.5 p75=  3482.6 bytes= 6896 flows=4 stI= 2464 stR= 104 static= 1216 retained=  7855 peak= 260353
+  768 XX KEMTLS-mutual    median=  3360.9 p25=  3309.8 p75=  3512.3 bytes= 7044 flows=6 stI= 2536 stR= 200 static= 1184 retained=  8217 peak= 262790
+ 1024 KK PKX-ML (ours)    median=  3654.8 p25=  3567.4 p75=  3782.2 bytes= 6272 flows=2 stI= 1600 stR=   0 static= 1568 retained=  7005 peak= 326239
+ 1024 KK FO-AKE           median=  3664.2 p25=  3577.8 p75=  3794.3 bytes= 6272 flows=2 stI= 4704 stR=   0 static= 1568 retained=  9997 peak= 328993
+ 1024 KK PQ-WireGuard     median=  3844.0 p25=  3753.2 p75=  3980.3 bytes= 6508 flows=3 stI= 1636 stR= 104 static= 1600 retained=  7747 peak= 330026
+ 1024 KK KEX-KKE          median=  4185.3 p25=  4088.7 p75=  4334.1 bytes= 6272 flows=2 stI= 3200 stR=   0 static= 1568 retained=  8436 peak= 327409
+ 1024 KK Kyber.AKE        median=  4186.0 p25=  4088.1 p75=  4331.4 bytes= 6272 flows=2 stI= 3200 stR=   0 static= 1568 retained=  8436 peak= 329140
+ 1024 KK PWZ-AKE          median=  4208.4 p25=  4107.1 p75=  4352.9 bytes= 6272 flows=2 stI= 6336 stR=   0 static= 1568 retained= 11654 peak= 330881
+ 1024 KK PQNoise-KK       median=  4295.0 p25=  4189.5 p75=  4439.7 bytes= 6320 flows=2 stI= 3240 stR=   0 static= 1600 retained=  8837 peak= 328099
+ 1024 XX PKX-ML (ours)    median=  3779.7 p25=  3655.5 p75=  3862.9 bytes= 9408 flows=4 stI= 1568 stR=  32 static= 1568 retained=  7324 peak= 323241
+ 1024 XX KEX-TTE          median=  4284.2 p25=  4147.5 p75=  4377.9 bytes= 9408 flows=4 stI= 3168 stR=  32 static= 1568 retained=  8819 peak= 327870
+ 1024 XX PQNoise-XX       median=  4423.8 p25=  4276.3 p75=  4515.0 bytes= 9488 flows=4 stI= 3232 stR= 104 static= 1600 retained=  9559 peak= 326985
+ 1024 XX KEMTLS-mutual    median=  4438.0 p25=  4297.6 p75=  4537.3 bytes= 9636 flows=6 stI= 3304 stR= 200 static= 1568 retained=  9921 peak= 330286

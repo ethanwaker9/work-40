@@ -1,0 +1,6305 @@
+{
+ "platform": "macOS-26.6.2-arm64-arm-64bit",
+ "machine": "arm64",
+ "python": "3.12.3",
+ "rounds": 4000,
+ "levels": {
+  "512": {
+   "timing": {
+    "KEX-KKE|KK": {
+     "name": "KEX-KKE",
+     "setting": "KK",
+     "reference": "dowling2026kex",
+     "median_us": 2445.8749685436487,
+     "p10_us": 2388.9580043032765,
+     "p25_us": 2398.250042460859,
+     "p75_us": 2549.291995819658,
+     "p90_us": 2577.9170100577176,
+     "min_us": 2374.1250042803586,
+     "mean_us": 2478.8065304164775
+    },
+    "PQNoise-KK|KK": {
+     "name": "PQNoise-KK",
+     "setting": "KK",
+     "reference": "angel2022pqnoise",
+     "median_us": 2550.7289974484593,
+     "p10_us": 2487.5419912859797,
+     "p25_us": 2497.082983609289,
+     "p75_us": 2655.4999640211463,
+     "p90_us": 2687.8329808823764,
+     "min_us": 2473.1250014156103,
+     "mean_us": 2587.9742060496937
+    },
+    "PQ-WireGuard|KK": {
+     "name": "PQ-WireGuard",
+     "setting": "KK",
+     "reference": "hulsing2021pqwg",
+     "median_us": 2304.7920258250087,
+     "p10_us": 2252.6250104419887,
+     "p25_us": 2261.5420166403055,
+     "p75_us": 2405.208011623472,
+     "p90_us": 2431.6670023836195,
+     "min_us": 2242.2500187531114,
+     "mean_us": 2338.0100892100018
+    },
+    "Kyber.AKE|KK": {
+     "name": "Kyber.AKE",
+     "setting": "KK",
+     "reference": "bos2018kyber",
+     "median_us": 2444.374986225739,
+     "p10_us": 2389.333036262542,
+     "p25_us": 2399.8329997994006,
+     "p75_us": 2550.1250056549907,
+     "p90_us": 2577.874984126538,
+     "min_us": 2376.8330574966967,
+     "mean_us": 2478.0570157745387
+    },
+    "FO-AKE|KK": {
+     "name": "FO-AKE",
+     "setting": "KK",
+     "reference": "hksu2020",
+     "median_us": 2151.3329702429473,
+     "p10_us": 2102.7500042691827,
+     "p25_us": 2111.6670104674995,
+     "p75_us": 2245.3750134445727,
+     "p90_us": 2270.666998811066,
+     "min_us": 2091.792004648596,
+     "mean_us": 2183.0230216728523
+    },
+    "PWZ-AKE|KK": {
+     "name": "PWZ-AKE",
+     "setting": "KK",
+     "reference": "pwz2023tighter",
+     "median_us": 2458.666480379179,
+     "p10_us": 2401.0829511098564,
+     "p25_us": 2412.582980468869,
+     "p75_us": 2563.7499638833106,
+     "p90_us": 2594.8749971576035,
+     "min_us": 2385.66700136289,
+     "mean_us": 2492.668595907162
+    },
+    "PKX-ML (ours)|KK": {
+     "name": "PKX-ML (ours)",
+     "setting": "KK",
+     "reference": "this work",
+     "median_us": 2144.9790219776332,
+     "p10_us": 2099.3330399505794,
+     "p25_us": 2107.2080126032233,
+     "p75_us": 2240.6659554690123,
+     "p90_us": 2267.0000325888395,
+     "min_us": 2087.583008687943,
+     "mean_us": 2176.3665007892996
+    },
+    "KEX-TTE|XX": {
+     "name": "KEX-TTE",
+     "setting": "XX",
+     "reference": "dowling2026kex",
+     "median_us": 2472.7500276640058,
+     "p10_us": 2416.540984995663,
+     "p25_us": 2426.916966214776,
+     "p75_us": 2578.957995865494,
+     "p90_us": 2606.457972433418,
+     "min_us": 2398.4999861568213,
+     "mean_us": 2506.6880775848404
+    },
+    "PQNoise-XX|XX": {
+     "name": "PQNoise-XX",
+     "setting": "XX",
+     "reference": "angel2022pqnoise",
+     "median_us": 2605.3124747704715,
+     "p10_us": 2541.9159792363644,
+     "p25_us": 2551.8329930491745,
+     "p75_us": 2712.2499886900187,
+     "p90_us": 2742.708020377904,
+     "min_us": 2522.6250290870667,
+     "mean_us": 2638.268062961288
+    },
+    "KEMTLS-mutual|XX": {
+     "name": "KEMTLS-mutual",
+     "setting": "XX",
+     "reference": "ssw2020kemtls",
+     "median_us": 2628.396003274247,
+     "p10_us": 2564.6669673733413,
+     "p25_us": 2574.5409657247365,
+     "p75_us": 2736.7500006221235,
+     "p90_us": 2765.6250167638063,
+     "min_us": 2548.2079945504665,
+     "mean_us": 2661.749473059899
+    },
+    "PKX-ML (ours)|XX": {
+     "name": "PKX-ML (ours)",
+     "setting": "XX",
+     "reference": "this work",
+     "median_us": 2200.8334926795214,
+     "p10_us": 2150.457992684096,
+     "p25_us": 2159.7500308416784,
+     "p75_us": 2295.500016771257,
+     "p90_us": 2322.2080199047923,
+     "min_us": 2131.458022631705,
+     "mean_us": 2231.37418711849
+    }
+   },
+   "profile": {
+    "KEX-KKE|KK": {
+     "flows": 2,
+     "bytes": 3104,
+     "messages": [
+      [
+       "I",
+       1568
+      ],
+      [
+       "R",
+       1536
+      ]
+     ],
+     "state_I": 1664,
+     "state_R": 0,
+     "static_secret": 800,
+     "peak_mem": 180163,
+     "retained_mem": 5228,
+     "retained_steps": [
+      5011,
+      5228,
+      2026
+     ],
+     "calls": {
+      "keygen": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 7,
+      "xof": 28,
+      "PRF": 34,
+      "H": 2,
+      "encaps": 3,
+      "pke_enc": 6,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3,
+      "sym_hash": 2
+     },
+     "nbytes": {
+      "keygen": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 952,
+      "PRF": 1122,
+      "H": 1600,
+      "encaps": 0,
+      "pke_enc": 0,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 2400,
+      "sym_hash": 192
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "keygen": 1,
+        "pke_keygen": 1,
+        "G": 2,
+        "matrix": 2,
+        "xof": 8,
+        "PRF": 9,
+        "H": 1,
+        "encaps": 1,
+        "pke_enc": 1
+       },
+       "nbytes": {
+        "keygen": 0,
+        "pke_keygen": 0,
+        "G": 97,
+        "matrix": 0,
+        "xof": 272,
+        "PRF": 297,
+        "H": 800,
+        "encaps": 0,
+        "pke_enc": 0
+       },
+       "out": 1568
+      },
+      {
+       "role": "R",
+       "calls": {
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 3,
+        "J": 1,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 12,
+        "PRF": 15,
+        "encaps": 2,
+        "H": 1,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 192,
+        "J": 800,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 408,
+        "PRF": 495,
+        "encaps": 0,
+        "H": 800,
+        "sym_hash": 96
+       },
+       "out": 1536
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_full": 2,
+        "pke_dec": 2,
+        "G": 2,
+        "J": 2,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 8,
+        "PRF": 10,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 1600,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 272,
+        "PRF": 330,
+        "sym_hash": 96
+       },
+       "out": 0
+      }
+     ]
+    },
+    "PQNoise-KK|KK": {
+     "flows": 2,
+     "bytes": 3152,
+     "messages": [
+      [
+       "I",
+       1584
+      ],
+      [
+       "R",
+       1568
+      ]
+     ],
+     "state_I": 1704,
+     "state_R": 0,
+     "static_secret": 832,
+     "peak_mem": 181497,
+     "retained_mem": 5629,
+     "retained_steps": [
+      5364,
+      5629,
+      2202
+     ],
+     "calls": {
+      "sym_hash": 12,
+      "rng": 4,
+      "prp": 4,
+      "encaps": 3,
+      "G": 7,
+      "pke_enc": 6,
+      "matrix": 7,
+      "xof": 28,
+      "PRF": 34,
+      "hmac": 18,
+      "keygen": 1,
+      "pke_keygen": 1,
+      "H": 2,
+      "aead": 6,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3
+     },
+     "nbytes": {
+      "sym_hash": 6644,
+      "rng": 160,
+      "prp": 160,
+      "encaps": 0,
+      "G": 417,
+      "pke_enc": 0,
+      "matrix": 0,
+      "xof": 952,
+      "PRF": 1122,
+      "hmac": 396,
+      "keygen": 0,
+      "pke_keygen": 0,
+      "H": 1600,
+      "aead": 3184,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 2400
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "sym_hash": 3,
+        "rng": 2,
+        "prp": 2,
+        "encaps": 1,
+        "G": 2,
+        "pke_enc": 1,
+        "matrix": 2,
+        "xof": 8,
+        "PRF": 9,
+        "hmac": 3,
+        "keygen": 1,
+        "pke_keygen": 1,
+        "H": 1,
+        "aead": 1
+       },
+       "nbytes": {
+        "sym_hash": 1658,
+        "rng": 96,
+        "prp": 96,
+        "encaps": 0,
+        "G": 97,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 272,
+        "PRF": 297,
+        "hmac": 66,
+        "keygen": 0,
+        "pke_keygen": 0,
+        "H": 800,
+        "aead": 800
+       },
+       "out": 1584
+      },
+      {
+       "role": "R",
+       "calls": {
+        "sym_hash": 6,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 3,
+        "J": 1,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 12,
+        "PRF": 15,
+        "hmac": 9,
+        "aead": 3,
+        "rng": 2,
+        "prp": 2,
+        "encaps": 2,
+        "H": 1
+       },
+       "nbytes": {
+        "sym_hash": 3322,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 192,
+        "J": 800,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 408,
+        "PRF": 495,
+        "hmac": 198,
+        "aead": 1584,
+        "rng": 64,
+        "prp": 64,
+        "encaps": 0,
+        "H": 800
+       },
+       "out": 1568
+      },
+      {
+       "role": "I",
+       "calls": {
+        "sym_hash": 3,
+        "decaps_full": 2,
+        "pke_dec": 2,
+        "G": 2,
+        "J": 2,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 8,
+        "PRF": 10,
+        "hmac": 6,
+        "aead": 2
+       },
+       "nbytes": {
+        "sym_hash": 1664,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 1600,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 272,
+        "PRF": 330,
+        "hmac": 132,
+        "aead": 800
+       },
+       "out": 0
+      }
+     ]
+    },
+    "PQ-WireGuard|KK": {
+     "flows": 3,
+     "bytes": 3340,
+     "messages": [
+      [
+       "I",
+       1684
+      ],
+      [
+       "R",
+       1596
+      ],
+      [
+       "I",
+       60
+      ]
+     ],
+     "state_I": 868,
+     "state_R": 104,
+     "static_secret": 832,
+     "peak_mem": 180362,
+     "retained_mem": 5307,
+     "retained_steps": [
+      4942,
+      5307,
+      2987,
+      2754
+     ],
+     "calls": {
+      "rng": 6,
+      "keygen_eph": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 6,
+      "xof": 24,
+      "PRF": 29,
+      "H": 2,
+      "hmac": 52,
+      "encaps": 3,
+      "pke_enc": 5,
+      "sym_hash": 12,
+      "aead": 8,
+      "mac": 12,
+      "decaps_full": 2,
+      "pke_dec": 3,
+      "J": 2,
+      "decaps_light": 1
+     },
+     "nbytes": {
+      "rng": 136,
+      "keygen_eph": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 816,
+      "PRF": 957,
+      "H": 1600,
+      "hmac": 3936,
+      "encaps": 0,
+      "pke_enc": 0,
+      "sym_hash": 3768,
+      "aead": 152,
+      "mac": 13072,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 1600,
+      "decaps_light": 0
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "rng": 3,
+        "keygen_eph": 1,
+        "pke_keygen": 1,
+        "G": 2,
+        "matrix": 2,
+        "xof": 8,
+        "PRF": 9,
+        "H": 1,
+        "hmac": 10,
+        "encaps": 1,
+        "pke_enc": 1,
+        "sym_hash": 3,
+        "aead": 2,
+        "mac": 2
+       },
+       "nbytes": {
+        "rng": 68,
+        "keygen_eph": 0,
+        "pke_keygen": 0,
+        "G": 97,
+        "matrix": 0,
+        "xof": 272,
+        "PRF": 297,
+        "H": 800,
+        "hmac": 966,
+        "encaps": 0,
+        "pke_enc": 0,
+        "sym_hash": 972,
+        "aead": 44,
+        "mac": 3320
+       },
+       "out": 1684
+      },
+      {
+       "role": "R",
+       "calls": {
+        "mac": 4,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 3,
+        "J": 1,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 12,
+        "PRF": 15,
+        "hmac": 23,
+        "sym_hash": 6,
+        "aead": 3,
+        "rng": 3,
+        "encaps": 2,
+        "H": 1
+       },
+       "nbytes": {
+        "mac": 6464,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 192,
+        "J": 800,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 408,
+        "PRF": 495,
+        "hmac": 1934,
+        "sym_hash": 1884,
+        "aead": 76,
+        "rng": 68,
+        "encaps": 0,
+        "H": 800
+       },
+       "out": 1596
+      },
+      {
+       "role": "I",
+       "calls": {
+        "mac": 4,
+        "decaps_light": 1,
+        "pke_dec": 2,
+        "G": 2,
+        "decaps_full": 1,
+        "J": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 4,
+        "PRF": 5,
+        "hmac": 16,
+        "sym_hash": 3,
+        "aead": 2
+       },
+       "nbytes": {
+        "mac": 3216,
+        "decaps_light": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "decaps_full": 0,
+        "J": 800,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 136,
+        "PRF": 165,
+        "hmac": 1002,
+        "sym_hash": 912,
+        "aead": 16
+       },
+       "out": 60
+      },
+      {
+       "role": "R",
+       "calls": {
+        "mac": 2,
+        "aead": 1,
+        "hmac": 3
+       },
+       "nbytes": {
+        "mac": 72,
+        "aead": 16,
+        "hmac": 34
+       },
+       "out": 0
+      }
+     ]
+    },
+    "Kyber.AKE|KK": {
+     "flows": 2,
+     "bytes": 3104,
+     "messages": [
+      [
+       "I",
+       1568
+      ],
+      [
+       "R",
+       1536
+      ]
+     ],
+     "state_I": 1664,
+     "state_R": 0,
+     "static_secret": 800,
+     "peak_mem": 180163,
+     "retained_mem": 5228,
+     "retained_steps": [
+      5011,
+      5228,
+      2026
+     ],
+     "calls": {
+      "keygen": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 7,
+      "xof": 28,
+      "PRF": 34,
+      "H": 2,
+      "encaps": 3,
+      "pke_enc": 6,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3,
+      "sym_hash": 2
+     },
+     "nbytes": {
+      "keygen": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 952,
+      "PRF": 1122,
+      "H": 1600,
+      "encaps": 0,
+      "pke_enc": 0,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 2400,
+      "sym_hash": 192
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "keygen": 1,
+        "pke_keygen": 1,
+        "G": 2,
+        "matrix": 2,
+        "xof": 8,
+        "PRF": 9,
+        "H": 1,
+        "encaps": 1,
+        "pke_enc": 1
+       },
+       "nbytes": {
+        "keygen": 0,
+        "pke_keygen": 0,
+        "G": 97,
+        "matrix": 0,
+        "xof": 272,
+        "PRF": 297,
+        "H": 800,
+        "encaps": 0,
+        "pke_enc": 0
+       },
+       "out": 1568
+      },
+      {
+       "role": "R",
+       "calls": {
+        "encaps": 2,
+        "H": 1,
+        "G": 3,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 12,
+        "PRF": 15,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "J": 1,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "encaps": 0,
+        "H": 800,
+        "G": 192,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 408,
+        "PRF": 495,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "J": 800,
+        "sym_hash": 96
+       },
+       "out": 1536
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_full": 2,
+        "pke_dec": 2,
+        "G": 2,
+        "J": 2,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 8,
+        "PRF": 10,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 1600,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 272,
+        "PRF": 330,
+        "sym_hash": 96
+       },
+       "out": 0
+      }
+     ]
+    },
+    "FO-AKE|KK": {
+     "flows": 2,
+     "bytes": 3104,
+     "messages": [
+      [
+       "I",
+       1568
+      ],
+      [
+       "R",
+       1536
+      ]
+     ],
+     "state_I": 2368,
+     "state_R": 0,
+     "static_secret": 800,
+     "peak_mem": 181109,
+     "retained_mem": 6061,
+     "retained_steps": [
+      4243,
+      6061,
+      2122
+     ],
+     "calls": {
+      "rng": 4,
+      "sym_hash": 7,
+      "pke_enc": 5,
+      "matrix": 6,
+      "xof": 24,
+      "PRF": 29,
+      "pke_keygen": 1,
+      "G": 1,
+      "pke_dec": 3,
+      "hmac": 2
+     },
+     "nbytes": {
+      "rng": 128,
+      "sym_hash": 6673,
+      "pke_enc": 0,
+      "matrix": 0,
+      "xof": 816,
+      "PRF": 957,
+      "pke_keygen": 0,
+      "G": 33,
+      "pke_dec": 0,
+      "hmac": 7952
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "rng": 2,
+        "sym_hash": 1,
+        "pke_enc": 1,
+        "matrix": 2,
+        "xof": 8,
+        "PRF": 9,
+        "pke_keygen": 1,
+        "G": 1
+       },
+       "nbytes": {
+        "rng": 64,
+        "sym_hash": 39,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 272,
+        "PRF": 297,
+        "pke_keygen": 0,
+        "G": 33
+       },
+       "out": 1568
+      },
+      {
+       "role": "R",
+       "calls": {
+        "rng": 2,
+        "sym_hash": 4,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 12,
+        "PRF": 15,
+        "pke_dec": 1,
+        "hmac": 1
+       },
+       "nbytes": {
+        "rng": 64,
+        "sym_hash": 3356,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 408,
+        "PRF": 495,
+        "pke_dec": 0,
+        "hmac": 3976
+       },
+       "out": 1536
+      },
+      {
+       "role": "I",
+       "calls": {
+        "pke_dec": 2,
+        "sym_hash": 2,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 4,
+        "PRF": 5,
+        "hmac": 1
+       },
+       "nbytes": {
+        "pke_dec": 0,
+        "sym_hash": 3278,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 136,
+        "PRF": 165,
+        "hmac": 3976
+       },
+       "out": 0
+      }
+     ]
+    },
+    "PWZ-AKE|KK": {
+     "flows": 2,
+     "bytes": 3104,
+     "messages": [
+      [
+       "I",
+       1568
+      ],
+      [
+       "R",
+       1536
+      ]
+     ],
+     "state_I": 3232,
+     "state_R": 0,
+     "static_secret": 800,
+     "peak_mem": 180243,
+     "retained_mem": 6950,
+     "retained_steps": [
+      6733,
+      6950,
+      2114
+     ],
+     "calls": {
+      "keygen": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 7,
+      "xof": 28,
+      "PRF": 34,
+      "H": 2,
+      "encaps": 3,
+      "pke_enc": 6,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3,
+      "sym_hash": 2
+     },
+     "nbytes": {
+      "keygen": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 952,
+      "PRF": 1122,
+      "H": 1600,
+      "encaps": 0,
+      "pke_enc": 0,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 2400,
+      "sym_hash": 6400
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "keygen": 1,
+        "pke_keygen": 1,
+        "G": 2,
+        "matrix": 2,
+        "xof": 8,
+        "PRF": 9,
+        "H": 1,
+        "encaps": 1,
+        "pke_enc": 1
+       },
+       "nbytes": {
+        "keygen": 0,
+        "pke_keygen": 0,
+        "G": 97,
+        "matrix": 0,
+        "xof": 272,
+        "PRF": 297,
+        "H": 800,
+        "encaps": 0,
+        "pke_enc": 0
+       },
+       "out": 1568
+      },
+      {
+       "role": "R",
+       "calls": {
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 3,
+        "J": 1,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 12,
+        "PRF": 15,
+        "encaps": 2,
+        "H": 1,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 192,
+        "J": 800,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 408,
+        "PRF": 495,
+        "encaps": 0,
+        "H": 800,
+        "sym_hash": 3200
+       },
+       "out": 1536
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_full": 2,
+        "pke_dec": 2,
+        "G": 2,
+        "J": 2,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 8,
+        "PRF": 10,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 1600,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 272,
+        "PRF": 330,
+        "sym_hash": 3200
+       },
+       "out": 0
+      }
+     ]
+    },
+    "PKX-ML (ours)|KK": {
+     "flows": 2,
+     "bytes": 3104,
+     "messages": [
+      [
+       "I",
+       1568
+      ],
+      [
+       "R",
+       1536
+      ]
+     ],
+     "state_I": 832,
+     "state_R": 0,
+     "static_secret": 800,
+     "peak_mem": 180401,
+     "retained_mem": 4637,
+     "retained_steps": [
+      4540,
+      4637,
+      2234
+     ],
+     "calls": {
+      "rng": 2,
+      "keygen_eph": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 6,
+      "xof": 24,
+      "PRF": 29,
+      "H": 2,
+      "sym_hash": 6,
+      "encaps": 3,
+      "pke_enc": 5,
+      "decaps_full": 2,
+      "pke_dec": 3,
+      "J": 2,
+      "decaps_light": 1
+     },
+     "nbytes": {
+      "rng": 128,
+      "keygen_eph": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 816,
+      "PRF": 957,
+      "H": 1600,
+      "sym_hash": 2074,
+      "encaps": 0,
+      "pke_enc": 0,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 1600,
+      "decaps_light": 0
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "rng": 1,
+        "keygen_eph": 1,
+        "pke_keygen": 1,
+        "G": 2,
+        "matrix": 2,
+        "xof": 8,
+        "PRF": 9,
+        "H": 1,
+        "sym_hash": 1,
+        "encaps": 1,
+        "pke_enc": 1
+       },
+       "nbytes": {
+        "rng": 64,
+        "keygen_eph": 0,
+        "pke_keygen": 0,
+        "G": 97,
+        "matrix": 0,
+        "xof": 272,
+        "PRF": 297,
+        "H": 800,
+        "sym_hash": 77,
+        "encaps": 0,
+        "pke_enc": 0
+       },
+       "out": 1568
+      },
+      {
+       "role": "R",
+       "calls": {
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 3,
+        "J": 1,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 12,
+        "PRF": 15,
+        "rng": 1,
+        "encaps": 2,
+        "H": 1,
+        "sym_hash": 3
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 192,
+        "J": 800,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 408,
+        "PRF": 495,
+        "rng": 64,
+        "encaps": 0,
+        "H": 800,
+        "sym_hash": 1037
+       },
+       "out": 1536
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_light": 1,
+        "pke_dec": 2,
+        "G": 2,
+        "sym_hash": 2,
+        "decaps_full": 1,
+        "J": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 4,
+        "PRF": 5
+       },
+       "nbytes": {
+        "decaps_light": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "sym_hash": 960,
+        "decaps_full": 0,
+        "J": 800,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 136,
+        "PRF": 165
+       },
+       "out": 0
+      }
+     ]
+    },
+    "KEX-TTE|XX": {
+     "flows": 4,
+     "bytes": 4704,
+     "messages": [
+      [
+       "I",
+       800
+      ],
+      [
+       "R",
+       1568
+      ],
+      [
+       "I",
+       1568
+      ],
+      [
+       "R",
+       768
+      ]
+     ],
+     "state_I": 1632,
+     "state_R": 32,
+     "static_secret": 800,
+     "peak_mem": 180499,
+     "retained_mem": 5643,
+     "retained_steps": [
+      4514,
+      5643,
+      4260,
+      3492,
+      2658
+     ],
+     "calls": {
+      "keygen": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 7,
+      "xof": 28,
+      "PRF": 34,
+      "H": 4,
+      "encaps": 3,
+      "pke_enc": 6,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3,
+      "sym_hash": 2
+     },
+     "nbytes": {
+      "keygen": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 952,
+      "PRF": 1122,
+      "H": 3200,
+      "encaps": 0,
+      "pke_enc": 0,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 2400,
+      "sym_hash": 192
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "keygen": 1,
+        "pke_keygen": 1,
+        "G": 1,
+        "matrix": 1,
+        "xof": 4,
+        "PRF": 4,
+        "H": 1
+       },
+       "nbytes": {
+        "keygen": 0,
+        "pke_keygen": 0,
+        "G": 33,
+        "matrix": 0,
+        "xof": 136,
+        "PRF": 132,
+        "H": 800
+       },
+       "out": 800
+      },
+      {
+       "role": "R",
+       "calls": {
+        "encaps": 1,
+        "H": 1,
+        "G": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 4,
+        "PRF": 5
+       },
+       "nbytes": {
+        "encaps": 0,
+        "H": 800,
+        "G": 64,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 136,
+        "PRF": 165
+       },
+       "out": 1568
+      },
+      {
+       "role": "I",
+       "calls": {
+        "encaps": 1,
+        "H": 1,
+        "G": 2,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 8,
+        "PRF": 10,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "J": 1
+       },
+       "nbytes": {
+        "encaps": 0,
+        "H": 800,
+        "G": 128,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 272,
+        "PRF": 330,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "J": 800
+       },
+       "out": 1568
+      },
+      {
+       "role": "R",
+       "calls": {
+        "encaps": 1,
+        "H": 1,
+        "G": 2,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 8,
+        "PRF": 10,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "J": 1,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "encaps": 0,
+        "H": 800,
+        "G": 128,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 272,
+        "PRF": 330,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "J": 800,
+        "sym_hash": 96
+       },
+       "out": 768
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 1,
+        "J": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 4,
+        "PRF": 5,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 64,
+        "J": 800,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 136,
+        "PRF": 165,
+        "sym_hash": 96
+       },
+       "out": 0
+      }
+     ]
+    },
+    "PQNoise-XX|XX": {
+     "flows": 4,
+     "bytes": 4784,
+     "messages": [
+      [
+       "I",
+       800
+      ],
+      [
+       "R",
+       1584
+      ],
+      [
+       "I",
+       1600
+      ],
+      [
+       "R",
+       800
+      ]
+     ],
+     "state_I": 1696,
+     "state_R": 104,
+     "static_secret": 832,
+     "peak_mem": 181006,
+     "retained_mem": 6383,
+     "retained_steps": [
+      4948,
+      6383,
+      4951,
+      3925,
+      2866
+     ],
+     "calls": {
+      "sym_hash": 20,
+      "rng": 4,
+      "prp": 4,
+      "keygen": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 7,
+      "xof": 28,
+      "PRF": 34,
+      "H": 4,
+      "encaps": 3,
+      "pke_enc": 6,
+      "hmac": 18,
+      "aead": 10,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3
+     },
+     "nbytes": {
+      "sym_hash": 10120,
+      "rng": 160,
+      "prp": 160,
+      "keygen": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 952,
+      "PRF": 1122,
+      "H": 3200,
+      "encaps": 0,
+      "pke_enc": 0,
+      "hmac": 396,
+      "aead": 6352,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 2400
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "sym_hash": 4,
+        "rng": 1,
+        "prp": 1,
+        "keygen": 1,
+        "pke_keygen": 1,
+        "G": 1,
+        "matrix": 1,
+        "xof": 4,
+        "PRF": 4,
+        "H": 1
+       },
+       "nbytes": {
+        "sym_hash": 884,
+        "rng": 64,
+        "prp": 64,
+        "keygen": 0,
+        "pke_keygen": 0,
+        "G": 33,
+        "matrix": 0,
+        "xof": 136,
+        "PRF": 132,
+        "H": 800
+       },
+       "out": 800
+      },
+      {
+       "role": "R",
+       "calls": {
+        "sym_hash": 6,
+        "rng": 1,
+        "prp": 1,
+        "encaps": 1,
+        "H": 1,
+        "G": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 4,
+        "PRF": 5,
+        "hmac": 3,
+        "aead": 1
+       },
+       "nbytes": {
+        "sym_hash": 2532,
+        "rng": 32,
+        "prp": 32,
+        "encaps": 0,
+        "H": 800,
+        "G": 64,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 136,
+        "PRF": 165,
+        "hmac": 66,
+        "aead": 800
+       },
+       "out": 1584
+      },
+      {
+       "role": "I",
+       "calls": {
+        "sym_hash": 4,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 2,
+        "J": 1,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 8,
+        "PRF": 10,
+        "hmac": 6,
+        "aead": 3,
+        "rng": 1,
+        "prp": 1,
+        "encaps": 1,
+        "H": 1
+       },
+       "nbytes": {
+        "sym_hash": 3312,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 800,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 272,
+        "PRF": 330,
+        "hmac": 132,
+        "aead": 2384,
+        "rng": 32,
+        "prp": 32,
+        "encaps": 0,
+        "H": 800
+       },
+       "out": 1600
+      },
+      {
+       "role": "R",
+       "calls": {
+        "aead": 4,
+        "sym_hash": 4,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 2,
+        "J": 1,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 8,
+        "PRF": 10,
+        "hmac": 6,
+        "rng": 1,
+        "prp": 1,
+        "encaps": 1,
+        "H": 1
+       },
+       "nbytes": {
+        "aead": 2368,
+        "sym_hash": 2528,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 800,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 272,
+        "PRF": 330,
+        "hmac": 132,
+        "rng": 32,
+        "prp": 32,
+        "encaps": 0,
+        "H": 800
+       },
+       "out": 800
+      },
+      {
+       "role": "I",
+       "calls": {
+        "aead": 2,
+        "sym_hash": 2,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 1,
+        "J": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 4,
+        "PRF": 5,
+        "hmac": 3
+       },
+       "nbytes": {
+        "aead": 800,
+        "sym_hash": 864,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 64,
+        "J": 800,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 136,
+        "PRF": 165,
+        "hmac": 66
+       },
+       "out": 0
+      }
+     ]
+    },
+    "KEMTLS-mutual|XX": {
+     "flows": 6,
+     "bytes": 4932,
+     "messages": [
+      [
+       "I",
+       834
+      ],
+      [
+       "R",
+       1618
+      ],
+      [
+       "I",
+       1600
+      ],
+      [
+       "R",
+       784
+      ],
+      [
+       "I",
+       48
+      ],
+      [
+       "R",
+       48
+      ]
+     ],
+     "state_I": 1768,
+     "state_R": 200,
+     "static_secret": 800,
+     "peak_mem": 180876,
+     "retained_mem": 6745,
+     "retained_steps": [
+      5366,
+      6745,
+      5344,
+      4560,
+      3856,
+      3718,
+      3467
+     ],
+     "calls": {
+      "keygen": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 7,
+      "xof": 28,
+      "PRF": 34,
+      "H": 4,
+      "rng": 2,
+      "sym_hash": 16,
+      "hmac": 46,
+      "encaps": 3,
+      "pke_enc": 6,
+      "aead": 12,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3
+     },
+     "nbytes": {
+      "keygen": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 952,
+      "PRF": 1122,
+      "H": 3200,
+      "rng": 64,
+      "sym_hash": 9864,
+      "hmac": 1408,
+      "encaps": 0,
+      "pke_enc": 0,
+      "aead": 6496,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 2400
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "keygen": 1,
+        "pke_keygen": 1,
+        "G": 1,
+        "matrix": 1,
+        "xof": 4,
+        "PRF": 4,
+        "H": 1,
+        "rng": 1,
+        "sym_hash": 1,
+        "hmac": 2
+       },
+       "nbytes": {
+        "keygen": 0,
+        "pke_keygen": 0,
+        "G": 33,
+        "matrix": 0,
+        "xof": 136,
+        "PRF": 132,
+        "H": 800,
+        "rng": 32,
+        "sym_hash": 834,
+        "hmac": 50
+       },
+       "out": 834
+      },
+      {
+       "role": "R",
+       "calls": {
+        "sym_hash": 3,
+        "hmac": 7,
+        "encaps": 1,
+        "H": 1,
+        "G": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 4,
+        "PRF": 5,
+        "rng": 1,
+        "aead": 1
+       },
+       "nbytes": {
+        "sym_hash": 2452,
+        "hmac": 224,
+        "encaps": 0,
+        "H": 800,
+        "G": 64,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 136,
+        "PRF": 165,
+        "rng": 32,
+        "aead": 800
+       },
+       "out": 1618
+      },
+      {
+       "role": "I",
+       "calls": {
+        "sym_hash": 4,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 2,
+        "J": 1,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 8,
+        "PRF": 10,
+        "hmac": 11,
+        "aead": 3,
+        "encaps": 1,
+        "H": 1
+       },
+       "nbytes": {
+        "sym_hash": 3218,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 800,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 272,
+        "PRF": 330,
+        "hmac": 364,
+        "aead": 2384,
+        "encaps": 0,
+        "H": 800
+       },
+       "out": 1600
+      },
+      {
+       "role": "R",
+       "calls": {
+        "hmac": 8,
+        "aead": 3,
+        "sym_hash": 3,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 2,
+        "J": 1,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 8,
+        "PRF": 10,
+        "encaps": 1,
+        "H": 1
+       },
+       "nbytes": {
+        "hmac": 236,
+        "aead": 2368,
+        "sym_hash": 2384,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 800,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 272,
+        "PRF": 330,
+        "encaps": 0,
+        "H": 800
+       },
+       "out": 784
+      },
+      {
+       "role": "I",
+       "calls": {
+        "hmac": 6,
+        "aead": 2,
+        "sym_hash": 2,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 1,
+        "J": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 4,
+        "PRF": 5
+       },
+       "nbytes": {
+        "hmac": 168,
+        "aead": 816,
+        "sym_hash": 832,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 64,
+        "J": 800,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 136,
+        "PRF": 165
+       },
+       "out": 48
+      },
+      {
+       "role": "R",
+       "calls": {
+        "hmac": 8,
+        "aead": 2,
+        "sym_hash": 2
+       },
+       "nbytes": {
+        "hmac": 244,
+        "aead": 80,
+        "sym_hash": 96
+       },
+       "out": 48
+      },
+      {
+       "role": "I",
+       "calls": {
+        "hmac": 4,
+        "aead": 1,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "hmac": 122,
+        "aead": 48,
+        "sym_hash": 48
+       },
+       "out": 0
+      }
+     ]
+    },
+    "PKX-ML (ours)|XX": {
+     "flows": 4,
+     "bytes": 4704,
+     "messages": [
+      [
+       "I",
+       800
+      ],
+      [
+       "R",
+       1568
+      ],
+      [
+       "I",
+       1568
+      ],
+      [
+       "R",
+       768
+      ]
+     ],
+     "state_I": 800,
+     "state_R": 32,
+     "static_secret": 800,
+     "peak_mem": 180514,
+     "retained_mem": 4916,
+     "retained_steps": [
+      3787,
+      4916,
+      4332,
+      3564,
+      2730
+     ],
+     "calls": {
+      "rng": 4,
+      "keygen_eph": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 6,
+      "xof": 24,
+      "PRF": 29,
+      "H": 4,
+      "encaps": 3,
+      "pke_enc": 5,
+      "sym_hash": 6,
+      "otp": 4,
+      "decaps_light": 1,
+      "pke_dec": 3,
+      "decaps_full": 2,
+      "J": 2
+     },
+     "nbytes": {
+      "rng": 128,
+      "keygen_eph": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 816,
+      "PRF": 957,
+      "H": 3200,
+      "encaps": 0,
+      "pke_enc": 0,
+      "sym_hash": 2010,
+      "otp": 3200,
+      "decaps_light": 0,
+      "pke_dec": 0,
+      "decaps_full": 0,
+      "J": 1600
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "rng": 1,
+        "keygen_eph": 1,
+        "pke_keygen": 1,
+        "G": 1,
+        "matrix": 1,
+        "xof": 4,
+        "PRF": 4,
+        "H": 1
+       },
+       "nbytes": {
+        "rng": 32,
+        "keygen_eph": 0,
+        "pke_keygen": 0,
+        "G": 33,
+        "matrix": 0,
+        "xof": 136,
+        "PRF": 132,
+        "H": 800
+       },
+       "out": 800
+      },
+      {
+       "role": "R",
+       "calls": {
+        "rng": 1,
+        "encaps": 1,
+        "H": 1,
+        "G": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 4,
+        "PRF": 5,
+        "sym_hash": 1,
+        "otp": 1
+       },
+       "nbytes": {
+        "rng": 32,
+        "encaps": 0,
+        "H": 800,
+        "G": 64,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 136,
+        "PRF": 165,
+        "sym_hash": 811,
+        "otp": 800
+       },
+       "out": 1568
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_light": 1,
+        "pke_dec": 1,
+        "G": 2,
+        "sym_hash": 2,
+        "otp": 2,
+        "rng": 1,
+        "encaps": 1,
+        "H": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 4,
+        "PRF": 5
+       },
+       "nbytes": {
+        "decaps_light": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "sym_hash": 888,
+        "otp": 1600,
+        "rng": 32,
+        "encaps": 0,
+        "H": 800,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 136,
+        "PRF": 165
+       },
+       "out": 1568
+      },
+      {
+       "role": "R",
+       "calls": {
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 2,
+        "J": 1,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 8,
+        "PRF": 10,
+        "otp": 1,
+        "rng": 1,
+        "sym_hash": 2,
+        "encaps": 1,
+        "H": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 800,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 272,
+        "PRF": 330,
+        "otp": 800,
+        "rng": 32,
+        "sym_hash": 194,
+        "encaps": 0,
+        "H": 800
+       },
+       "out": 768
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 1,
+        "J": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 4,
+        "PRF": 5,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 64,
+        "J": 800,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 136,
+        "PRF": 165,
+        "sym_hash": 117
+       },
+       "out": 0
+      }
+     ]
+    }
+   }
+  },
+  "768": {
+   "timing": {
+    "KEX-KKE|KK": {
+     "name": "KEX-KKE",
+     "setting": "KK",
+     "reference": "dowling2026kex",
+     "median_us": 3298.0209798552096,
+     "p10_us": 3124.167036730796,
+     "p25_us": 3157.9170026816428,
+     "p75_us": 3342.041978612542,
+     "p90_us": 3381.082962732762,
+     "min_us": 3097.1249798312783,
+     "mean_us": 3265.3473366372054
+    },
+    "PQNoise-KK|KK": {
+     "name": "PQNoise-KK",
+     "setting": "KK",
+     "reference": "angel2022pqnoise",
+     "median_us": 3390.978992683813,
+     "p10_us": 3223.2499797828496,
+     "p25_us": 3259.874996729195,
+     "p75_us": 3447.042021434754,
+     "p90_us": 3492.666990496218,
+     "min_us": 3201.4159951359034,
+     "mean_us": 3370.1159064949024
+    },
+    "PQ-WireGuard|KK": {
+     "name": "PQ-WireGuard",
+     "setting": "KK",
+     "reference": "hulsing2021pqwg",
+     "median_us": 3063.4170107077807,
+     "p10_us": 2903.8750217296183,
+     "p25_us": 2935.500000603497,
+     "p75_us": 3108.9159892871976,
+     "p90_us": 3148.0839825235307,
+     "min_us": 2887.7920121885836,
+     "mean_us": 3036.2489824619843
+    },
+    "Kyber.AKE|KK": {
+     "name": "Kyber.AKE",
+     "setting": "KK",
+     "reference": "bos2018kyber",
+     "median_us": 3293.958492577076,
+     "p10_us": 3123.0829772539437,
+     "p25_us": 3158.8749843649566,
+     "p75_us": 3338.458016514778,
+     "p90_us": 3379.1669993661344,
+     "min_us": 3098.7500213086605,
+     "mean_us": 3265.4278127738507
+    },
+    "FO-AKE|KK": {
+     "name": "FO-AKE",
+     "setting": "KK",
+     "reference": "hksu2020",
+     "median_us": 2900.083491113037,
+     "p10_us": 2741.625008638948,
+     "p25_us": 2769.7079931385815,
+     "p75_us": 2934.9999967962503,
+     "p90_us": 2971.04095807299,
+     "min_us": 2722.000004723668,
+     "mean_us": 2870.3111090289894
+    },
+    "PWZ-AKE|KK": {
+     "name": "PWZ-AKE",
+     "setting": "KK",
+     "reference": "pwz2023tighter",
+     "median_us": 3314.186993520707,
+     "p10_us": 3140.582994092256,
+     "p25_us": 3178.458020556718,
+     "p75_us": 3359.2500258237123,
+     "p90_us": 3399.792010895908,
+     "min_us": 3117.582993581891,
+     "mean_us": 3285.2832702046726
+    },
+    "PKX-ML (ours)|KK": {
+     "name": "PKX-ML (ours)",
+     "setting": "KK",
+     "reference": "this work",
+     "median_us": 2889.0210087411106,
+     "p10_us": 2734.2080138623714,
+     "p25_us": 2764.791017398238,
+     "p75_us": 2926.4999902807176,
+     "p90_us": 2964.666986372322,
+     "min_us": 2713.9169978909194,
+     "mean_us": 2862.2284541343106
+    },
+    "KEX-TTE|XX": {
+     "name": "KEX-TTE",
+     "setting": "XX",
+     "reference": "dowling2026kex",
+     "median_us": 3209.562477422878,
+     "p10_us": 3145.832975860685,
+     "p25_us": 3160.4579999111593,
+     "p75_us": 3355.082997586578,
+     "p90_us": 3388.3749856613576,
+     "min_us": 3129.5830267481506,
+     "mean_us": 3254.2255540320184
+    },
+    "PQNoise-XX|XX": {
+     "name": "PQNoise-XX",
+     "setting": "XX",
+     "reference": "angel2022pqnoise",
+     "median_us": 3330.812498461455,
+     "p10_us": 3266.7909981682897,
+     "p25_us": 3283.458005171269,
+     "p75_us": 3482.583037111908,
+     "p90_us": 3519.541001878679,
+     "min_us": 3245.7500346936285,
+     "mean_us": 3379.509240054176
+    },
+    "KEMTLS-mutual|XX": {
+     "name": "KEMTLS-mutual",
+     "setting": "XX",
+     "reference": "ssw2020kemtls",
+     "median_us": 3360.9374659135938,
+     "p10_us": 3295.2919718809426,
+     "p25_us": 3309.7920240834355,
+     "p75_us": 3512.2919944114983,
+     "p90_us": 3545.665997080505,
+     "min_us": 3278.0420151539147,
+     "mean_us": 3407.7268127148272
+    },
+    "PKX-ML (ours)|XX": {
+     "name": "PKX-ML (ours)",
+     "setting": "XX",
+     "reference": "this work",
+     "median_us": 2835.4784881230444,
+     "p10_us": 2786.6249438375235,
+     "p25_us": 2797.874971292913,
+     "p75_us": 2971.5829878114164,
+     "p90_us": 3003.2499926164746,
+     "min_us": 2770.4169624485075,
+     "mean_us": 2882.2170084313257
+    }
+   },
+   "profile": {
+    "KEX-KKE|KK": {
+     "flows": 2,
+     "bytes": 4448,
+     "messages": [
+      [
+       "I",
+       2272
+      ],
+      [
+       "R",
+       2176
+      ]
+     ],
+     "state_I": 2432,
+     "state_R": 0,
+     "static_secret": 1184,
+     "peak_mem": 260393,
+     "retained_mem": 6636,
+     "retained_steps": [
+      6483,
+      6636,
+      2026
+     ],
+     "calls": {
+      "keygen": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 7,
+      "xof": 63,
+      "PRF": 48,
+      "H": 2,
+      "encaps": 3,
+      "pke_enc": 6,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3,
+      "sym_hash": 2
+     },
+     "nbytes": {
+      "keygen": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 2142,
+      "PRF": 1584,
+      "H": 2368,
+      "encaps": 0,
+      "pke_enc": 0,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 3360,
+      "sym_hash": 192
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "keygen": 1,
+        "pke_keygen": 1,
+        "G": 2,
+        "matrix": 2,
+        "xof": 18,
+        "PRF": 13,
+        "H": 1,
+        "encaps": 1,
+        "pke_enc": 1
+       },
+       "nbytes": {
+        "keygen": 0,
+        "pke_keygen": 0,
+        "G": 97,
+        "matrix": 0,
+        "xof": 612,
+        "PRF": 429,
+        "H": 1184,
+        "encaps": 0,
+        "pke_enc": 0
+       },
+       "out": 2272
+      },
+      {
+       "role": "R",
+       "calls": {
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 3,
+        "J": 1,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 27,
+        "PRF": 21,
+        "encaps": 2,
+        "H": 1,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 192,
+        "J": 1120,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 918,
+        "PRF": 693,
+        "encaps": 0,
+        "H": 1184,
+        "sym_hash": 96
+       },
+       "out": 2176
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_full": 2,
+        "pke_dec": 2,
+        "G": 2,
+        "J": 2,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 18,
+        "PRF": 14,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 2240,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 612,
+        "PRF": 462,
+        "sym_hash": 96
+       },
+       "out": 0
+      }
+     ]
+    },
+    "PQNoise-KK|KK": {
+     "flows": 2,
+     "bytes": 4496,
+     "messages": [
+      [
+       "I",
+       2288
+      ],
+      [
+       "R",
+       2208
+      ]
+     ],
+     "state_I": 2472,
+     "state_R": 0,
+     "static_secret": 1216,
+     "peak_mem": 260891,
+     "retained_mem": 7037,
+     "retained_steps": [
+      6836,
+      7037,
+      2202
+     ],
+     "calls": {
+      "sym_hash": 12,
+      "rng": 4,
+      "prp": 4,
+      "encaps": 3,
+      "G": 7,
+      "pke_enc": 6,
+      "matrix": 7,
+      "xof": 63,
+      "PRF": 48,
+      "hmac": 18,
+      "keygen": 1,
+      "pke_keygen": 1,
+      "H": 2,
+      "aead": 6,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3
+     },
+     "nbytes": {
+      "sym_hash": 9332,
+      "rng": 160,
+      "prp": 160,
+      "encaps": 0,
+      "G": 417,
+      "pke_enc": 0,
+      "matrix": 0,
+      "xof": 2142,
+      "PRF": 1584,
+      "hmac": 396,
+      "keygen": 0,
+      "pke_keygen": 0,
+      "H": 2368,
+      "aead": 4592,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 3360
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "sym_hash": 3,
+        "rng": 2,
+        "prp": 2,
+        "encaps": 1,
+        "G": 2,
+        "pke_enc": 1,
+        "matrix": 2,
+        "xof": 18,
+        "PRF": 13,
+        "hmac": 3,
+        "keygen": 1,
+        "pke_keygen": 1,
+        "H": 1,
+        "aead": 1
+       },
+       "nbytes": {
+        "sym_hash": 2362,
+        "rng": 96,
+        "prp": 96,
+        "encaps": 0,
+        "G": 97,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 612,
+        "PRF": 429,
+        "hmac": 66,
+        "keygen": 0,
+        "pke_keygen": 0,
+        "H": 1184,
+        "aead": 1184
+       },
+       "out": 2288
+      },
+      {
+       "role": "R",
+       "calls": {
+        "sym_hash": 6,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 3,
+        "J": 1,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 27,
+        "PRF": 21,
+        "hmac": 9,
+        "aead": 3,
+        "rng": 2,
+        "prp": 2,
+        "encaps": 2,
+        "H": 1
+       },
+       "nbytes": {
+        "sym_hash": 4666,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 192,
+        "J": 1120,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 918,
+        "PRF": 693,
+        "hmac": 198,
+        "aead": 2288,
+        "rng": 64,
+        "prp": 64,
+        "encaps": 0,
+        "H": 1184
+       },
+       "out": 2208
+      },
+      {
+       "role": "I",
+       "calls": {
+        "sym_hash": 3,
+        "decaps_full": 2,
+        "pke_dec": 2,
+        "G": 2,
+        "J": 2,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 18,
+        "PRF": 14,
+        "hmac": 6,
+        "aead": 2
+       },
+       "nbytes": {
+        "sym_hash": 2304,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 2240,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 612,
+        "PRF": 462,
+        "hmac": 132,
+        "aead": 1120
+       },
+       "out": 0
+      }
+     ]
+    },
+    "PQ-WireGuard|KK": {
+     "flows": 3,
+     "bytes": 4684,
+     "messages": [
+      [
+       "I",
+       2388
+      ],
+      [
+       "R",
+       2236
+      ],
+      [
+       "I",
+       60
+      ]
+     ],
+     "state_I": 1252,
+     "state_R": 104,
+     "static_secret": 1216,
+     "peak_mem": 262341,
+     "retained_mem": 6331,
+     "retained_steps": [
+      6030,
+      6331,
+      2987,
+      2754
+     ],
+     "calls": {
+      "rng": 6,
+      "keygen_eph": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 6,
+      "xof": 54,
+      "PRF": 41,
+      "H": 2,
+      "hmac": 52,
+      "encaps": 3,
+      "pke_enc": 5,
+      "sym_hash": 12,
+      "aead": 8,
+      "mac": 12,
+      "decaps_full": 2,
+      "pke_dec": 3,
+      "J": 2,
+      "decaps_light": 1
+     },
+     "nbytes": {
+      "rng": 136,
+      "keygen_eph": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 1836,
+      "PRF": 1353,
+      "H": 2368,
+      "hmac": 5344,
+      "encaps": 0,
+      "pke_enc": 0,
+      "sym_hash": 5176,
+      "aead": 152,
+      "mac": 18448,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 2240,
+      "decaps_light": 0
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "rng": 3,
+        "keygen_eph": 1,
+        "pke_keygen": 1,
+        "G": 2,
+        "matrix": 2,
+        "xof": 18,
+        "PRF": 13,
+        "H": 1,
+        "hmac": 10,
+        "encaps": 1,
+        "pke_enc": 1,
+        "sym_hash": 3,
+        "aead": 2,
+        "mac": 2
+       },
+       "nbytes": {
+        "rng": 68,
+        "keygen_eph": 0,
+        "pke_keygen": 0,
+        "G": 97,
+        "matrix": 0,
+        "xof": 612,
+        "PRF": 429,
+        "H": 1184,
+        "hmac": 1350,
+        "encaps": 0,
+        "pke_enc": 0,
+        "sym_hash": 1356,
+        "aead": 44,
+        "mac": 4728
+       },
+       "out": 2388
+      },
+      {
+       "role": "R",
+       "calls": {
+        "mac": 4,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 3,
+        "J": 1,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 27,
+        "PRF": 21,
+        "hmac": 23,
+        "sym_hash": 6,
+        "aead": 3,
+        "rng": 3,
+        "encaps": 2,
+        "H": 1
+       },
+       "nbytes": {
+        "mac": 9152,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 192,
+        "J": 1120,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 918,
+        "PRF": 693,
+        "hmac": 2638,
+        "sym_hash": 2588,
+        "aead": 76,
+        "rng": 68,
+        "encaps": 0,
+        "H": 1184
+       },
+       "out": 2236
+      },
+      {
+       "role": "I",
+       "calls": {
+        "mac": 4,
+        "decaps_light": 1,
+        "pke_dec": 2,
+        "G": 2,
+        "decaps_full": 1,
+        "J": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 9,
+        "PRF": 7,
+        "hmac": 16,
+        "sym_hash": 3,
+        "aead": 2
+       },
+       "nbytes": {
+        "mac": 4496,
+        "decaps_light": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "decaps_full": 0,
+        "J": 1120,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 306,
+        "PRF": 231,
+        "hmac": 1322,
+        "sym_hash": 1232,
+        "aead": 16
+       },
+       "out": 60
+      },
+      {
+       "role": "R",
+       "calls": {
+        "mac": 2,
+        "aead": 1,
+        "hmac": 3
+       },
+       "nbytes": {
+        "mac": 72,
+        "aead": 16,
+        "hmac": 34
+       },
+       "out": 0
+      }
+     ]
+    },
+    "Kyber.AKE|KK": {
+     "flows": 2,
+     "bytes": 4448,
+     "messages": [
+      [
+       "I",
+       2272
+      ],
+      [
+       "R",
+       2176
+      ]
+     ],
+     "state_I": 2432,
+     "state_R": 0,
+     "static_secret": 1184,
+     "peak_mem": 261548,
+     "retained_mem": 6636,
+     "retained_steps": [
+      6483,
+      6636,
+      2026
+     ],
+     "calls": {
+      "keygen": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 7,
+      "xof": 63,
+      "PRF": 48,
+      "H": 2,
+      "encaps": 3,
+      "pke_enc": 6,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3,
+      "sym_hash": 2
+     },
+     "nbytes": {
+      "keygen": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 2142,
+      "PRF": 1584,
+      "H": 2368,
+      "encaps": 0,
+      "pke_enc": 0,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 3360,
+      "sym_hash": 192
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "keygen": 1,
+        "pke_keygen": 1,
+        "G": 2,
+        "matrix": 2,
+        "xof": 18,
+        "PRF": 13,
+        "H": 1,
+        "encaps": 1,
+        "pke_enc": 1
+       },
+       "nbytes": {
+        "keygen": 0,
+        "pke_keygen": 0,
+        "G": 97,
+        "matrix": 0,
+        "xof": 612,
+        "PRF": 429,
+        "H": 1184,
+        "encaps": 0,
+        "pke_enc": 0
+       },
+       "out": 2272
+      },
+      {
+       "role": "R",
+       "calls": {
+        "encaps": 2,
+        "H": 1,
+        "G": 3,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 27,
+        "PRF": 21,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "J": 1,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "encaps": 0,
+        "H": 1184,
+        "G": 192,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 918,
+        "PRF": 693,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "J": 1120,
+        "sym_hash": 96
+       },
+       "out": 2176
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_full": 2,
+        "pke_dec": 2,
+        "G": 2,
+        "J": 2,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 18,
+        "PRF": 14,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 2240,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 612,
+        "PRF": 462,
+        "sym_hash": 96
+       },
+       "out": 0
+      }
+     ]
+    },
+    "FO-AKE|KK": {
+     "flows": 2,
+     "bytes": 4448,
+     "messages": [
+      [
+       "I",
+       2272
+      ],
+      [
+       "R",
+       2176
+      ]
+     ],
+     "state_I": 3456,
+     "state_R": 0,
+     "static_secret": 1184,
+     "peak_mem": 261209,
+     "retained_mem": 7789,
+     "retained_steps": [
+      5331,
+      7789,
+      2122
+     ],
+     "calls": {
+      "rng": 4,
+      "sym_hash": 7,
+      "pke_enc": 5,
+      "matrix": 6,
+      "xof": 54,
+      "PRF": 41,
+      "pke_keygen": 1,
+      "G": 1,
+      "pke_dec": 3,
+      "hmac": 2
+     },
+     "nbytes": {
+      "rng": 128,
+      "sym_hash": 9361,
+      "pke_enc": 0,
+      "matrix": 0,
+      "xof": 1836,
+      "PRF": 1353,
+      "pke_keygen": 0,
+      "G": 33,
+      "pke_dec": 0,
+      "hmac": 11280
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "rng": 2,
+        "sym_hash": 1,
+        "pke_enc": 1,
+        "matrix": 2,
+        "xof": 18,
+        "PRF": 13,
+        "pke_keygen": 1,
+        "G": 1
+       },
+       "nbytes": {
+        "rng": 64,
+        "sym_hash": 39,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 612,
+        "PRF": 429,
+        "pke_keygen": 0,
+        "G": 33
+       },
+       "out": 2272
+      },
+      {
+       "role": "R",
+       "calls": {
+        "rng": 2,
+        "sym_hash": 4,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 27,
+        "PRF": 21,
+        "pke_dec": 1,
+        "hmac": 1
+       },
+       "nbytes": {
+        "rng": 64,
+        "sym_hash": 4700,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 918,
+        "PRF": 693,
+        "pke_dec": 0,
+        "hmac": 5640
+       },
+       "out": 2176
+      },
+      {
+       "role": "I",
+       "calls": {
+        "pke_dec": 2,
+        "sym_hash": 2,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 9,
+        "PRF": 7,
+        "hmac": 1
+       },
+       "nbytes": {
+        "pke_dec": 0,
+        "sym_hash": 4622,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 306,
+        "PRF": 231,
+        "hmac": 5640
+       },
+       "out": 0
+      }
+     ]
+    },
+    "PWZ-AKE|KK": {
+     "flows": 2,
+     "bytes": 4448,
+     "messages": [
+      [
+       "I",
+       2272
+      ],
+      [
+       "R",
+       2176
+      ]
+     ],
+     "state_I": 4704,
+     "state_R": 0,
+     "static_secret": 1184,
+     "peak_mem": 262811,
+     "retained_mem": 9062,
+     "retained_steps": [
+      8909,
+      9062,
+      2114
+     ],
+     "calls": {
+      "keygen": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 7,
+      "xof": 63,
+      "PRF": 48,
+      "H": 2,
+      "encaps": 3,
+      "pke_enc": 6,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3,
+      "sym_hash": 2
+     },
+     "nbytes": {
+      "keygen": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 2142,
+      "PRF": 1584,
+      "H": 2368,
+      "encaps": 0,
+      "pke_enc": 0,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 3360,
+      "sym_hash": 9088
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "keygen": 1,
+        "pke_keygen": 1,
+        "G": 2,
+        "matrix": 2,
+        "xof": 18,
+        "PRF": 13,
+        "H": 1,
+        "encaps": 1,
+        "pke_enc": 1
+       },
+       "nbytes": {
+        "keygen": 0,
+        "pke_keygen": 0,
+        "G": 97,
+        "matrix": 0,
+        "xof": 612,
+        "PRF": 429,
+        "H": 1184,
+        "encaps": 0,
+        "pke_enc": 0
+       },
+       "out": 2272
+      },
+      {
+       "role": "R",
+       "calls": {
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 3,
+        "J": 1,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 27,
+        "PRF": 21,
+        "encaps": 2,
+        "H": 1,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 192,
+        "J": 1120,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 918,
+        "PRF": 693,
+        "encaps": 0,
+        "H": 1184,
+        "sym_hash": 4544
+       },
+       "out": 2176
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_full": 2,
+        "pke_dec": 2,
+        "G": 2,
+        "J": 2,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 18,
+        "PRF": 14,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 2240,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 612,
+        "PRF": 462,
+        "sym_hash": 4544
+       },
+       "out": 0
+      }
+     ]
+    },
+    "PKX-ML (ours)|KK": {
+     "flows": 2,
+     "bytes": 4448,
+     "messages": [
+      [
+       "I",
+       2272
+      ],
+      [
+       "R",
+       2176
+      ]
+     ],
+     "state_I": 1216,
+     "state_R": 0,
+     "static_secret": 1184,
+     "peak_mem": 259416,
+     "retained_mem": 5661,
+     "retained_steps": [
+      5628,
+      5661,
+      2234
+     ],
+     "calls": {
+      "rng": 2,
+      "keygen_eph": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 6,
+      "xof": 54,
+      "PRF": 41,
+      "H": 2,
+      "sym_hash": 6,
+      "encaps": 3,
+      "pke_enc": 5,
+      "decaps_full": 2,
+      "pke_dec": 3,
+      "J": 2,
+      "decaps_light": 1
+     },
+     "nbytes": {
+      "rng": 128,
+      "keygen_eph": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 1836,
+      "PRF": 1353,
+      "H": 2368,
+      "sym_hash": 2714,
+      "encaps": 0,
+      "pke_enc": 0,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 2240,
+      "decaps_light": 0
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "rng": 1,
+        "keygen_eph": 1,
+        "pke_keygen": 1,
+        "G": 2,
+        "matrix": 2,
+        "xof": 18,
+        "PRF": 13,
+        "H": 1,
+        "sym_hash": 1,
+        "encaps": 1,
+        "pke_enc": 1
+       },
+       "nbytes": {
+        "rng": 64,
+        "keygen_eph": 0,
+        "pke_keygen": 0,
+        "G": 97,
+        "matrix": 0,
+        "xof": 612,
+        "PRF": 429,
+        "H": 1184,
+        "sym_hash": 77,
+        "encaps": 0,
+        "pke_enc": 0
+       },
+       "out": 2272
+      },
+      {
+       "role": "R",
+       "calls": {
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 3,
+        "J": 1,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 27,
+        "PRF": 21,
+        "rng": 1,
+        "encaps": 2,
+        "H": 1,
+        "sym_hash": 3
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 192,
+        "J": 1120,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 918,
+        "PRF": 693,
+        "rng": 64,
+        "encaps": 0,
+        "H": 1184,
+        "sym_hash": 1357
+       },
+       "out": 2176
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_light": 1,
+        "pke_dec": 2,
+        "G": 2,
+        "sym_hash": 2,
+        "decaps_full": 1,
+        "J": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 9,
+        "PRF": 7
+       },
+       "nbytes": {
+        "decaps_light": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "sym_hash": 1280,
+        "decaps_full": 0,
+        "J": 1120,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 306,
+        "PRF": 231
+       },
+       "out": 0
+      }
+     ]
+    },
+    "KEX-TTE|XX": {
+     "flows": 4,
+     "bytes": 6816,
+     "messages": [
+      [
+       "I",
+       1184
+      ],
+      [
+       "R",
+       2272
+      ],
+      [
+       "I",
+       2272
+      ],
+      [
+       "R",
+       1088
+      ]
+     ],
+     "state_I": 2400,
+     "state_R": 32,
+     "static_secret": 1184,
+     "peak_mem": 260758,
+     "retained_mem": 7115,
+     "retained_steps": [
+      5666,
+      7115,
+      4964,
+      3812,
+      2658
+     ],
+     "calls": {
+      "keygen": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 7,
+      "xof": 63,
+      "PRF": 48,
+      "H": 4,
+      "encaps": 3,
+      "pke_enc": 6,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3,
+      "sym_hash": 2
+     },
+     "nbytes": {
+      "keygen": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 2142,
+      "PRF": 1584,
+      "H": 4736,
+      "encaps": 0,
+      "pke_enc": 0,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 3360,
+      "sym_hash": 192
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "keygen": 1,
+        "pke_keygen": 1,
+        "G": 1,
+        "matrix": 1,
+        "xof": 9,
+        "PRF": 6,
+        "H": 1
+       },
+       "nbytes": {
+        "keygen": 0,
+        "pke_keygen": 0,
+        "G": 33,
+        "matrix": 0,
+        "xof": 306,
+        "PRF": 198,
+        "H": 1184
+       },
+       "out": 1184
+      },
+      {
+       "role": "R",
+       "calls": {
+        "encaps": 1,
+        "H": 1,
+        "G": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 9,
+        "PRF": 7
+       },
+       "nbytes": {
+        "encaps": 0,
+        "H": 1184,
+        "G": 64,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 306,
+        "PRF": 231
+       },
+       "out": 2272
+      },
+      {
+       "role": "I",
+       "calls": {
+        "encaps": 1,
+        "H": 1,
+        "G": 2,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 18,
+        "PRF": 14,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "J": 1
+       },
+       "nbytes": {
+        "encaps": 0,
+        "H": 1184,
+        "G": 128,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 612,
+        "PRF": 462,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "J": 1120
+       },
+       "out": 2272
+      },
+      {
+       "role": "R",
+       "calls": {
+        "encaps": 1,
+        "H": 1,
+        "G": 2,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 18,
+        "PRF": 14,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "J": 1,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "encaps": 0,
+        "H": 1184,
+        "G": 128,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 612,
+        "PRF": 462,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "J": 1120,
+        "sym_hash": 96
+       },
+       "out": 1088
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 1,
+        "J": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 9,
+        "PRF": 7,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 64,
+        "J": 1120,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 306,
+        "PRF": 231,
+        "sym_hash": 96
+       },
+       "out": 0
+      }
+     ]
+    },
+    "PQNoise-XX|XX": {
+     "flows": 4,
+     "bytes": 6896,
+     "messages": [
+      [
+       "I",
+       1184
+      ],
+      [
+       "R",
+       2288
+      ],
+      [
+       "I",
+       2304
+      ],
+      [
+       "R",
+       1120
+      ]
+     ],
+     "state_I": 2464,
+     "state_R": 104,
+     "static_secret": 1216,
+     "peak_mem": 260353,
+     "retained_mem": 7855,
+     "retained_steps": [
+      6100,
+      7855,
+      5655,
+      4245,
+      2866
+     ],
+     "calls": {
+      "sym_hash": 20,
+      "rng": 4,
+      "prp": 4,
+      "keygen": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 7,
+      "xof": 63,
+      "PRF": 48,
+      "H": 4,
+      "encaps": 3,
+      "pke_enc": 6,
+      "hmac": 18,
+      "aead": 10,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3
+     },
+     "nbytes": {
+      "sym_hash": 14344,
+      "rng": 160,
+      "prp": 160,
+      "keygen": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 2142,
+      "PRF": 1584,
+      "H": 4736,
+      "encaps": 0,
+      "pke_enc": 0,
+      "hmac": 396,
+      "aead": 9168,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 3360
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "sym_hash": 4,
+        "rng": 1,
+        "prp": 1,
+        "keygen": 1,
+        "pke_keygen": 1,
+        "G": 1,
+        "matrix": 1,
+        "xof": 9,
+        "PRF": 6,
+        "H": 1
+       },
+       "nbytes": {
+        "sym_hash": 1268,
+        "rng": 64,
+        "prp": 64,
+        "keygen": 0,
+        "pke_keygen": 0,
+        "G": 33,
+        "matrix": 0,
+        "xof": 306,
+        "PRF": 198,
+        "H": 1184
+       },
+       "out": 1184
+      },
+      {
+       "role": "R",
+       "calls": {
+        "sym_hash": 6,
+        "rng": 1,
+        "prp": 1,
+        "encaps": 1,
+        "H": 1,
+        "G": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 9,
+        "PRF": 7,
+        "hmac": 3,
+        "aead": 1
+       },
+       "nbytes": {
+        "sym_hash": 3620,
+        "rng": 32,
+        "prp": 32,
+        "encaps": 0,
+        "H": 1184,
+        "G": 64,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 306,
+        "PRF": 231,
+        "hmac": 66,
+        "aead": 1184
+       },
+       "out": 2288
+      },
+      {
+       "role": "I",
+       "calls": {
+        "sym_hash": 4,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 2,
+        "J": 1,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 18,
+        "PRF": 14,
+        "hmac": 6,
+        "aead": 3,
+        "rng": 1,
+        "prp": 1,
+        "encaps": 1,
+        "H": 1
+       },
+       "nbytes": {
+        "sym_hash": 4720,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 1120,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 612,
+        "PRF": 462,
+        "hmac": 132,
+        "aead": 3472,
+        "rng": 32,
+        "prp": 32,
+        "encaps": 0,
+        "H": 1184
+       },
+       "out": 2304
+      },
+      {
+       "role": "R",
+       "calls": {
+        "aead": 4,
+        "sym_hash": 4,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 2,
+        "J": 1,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 18,
+        "PRF": 14,
+        "hmac": 6,
+        "rng": 1,
+        "prp": 1,
+        "encaps": 1,
+        "H": 1
+       },
+       "nbytes": {
+        "aead": 3392,
+        "sym_hash": 3552,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 1120,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 612,
+        "PRF": 462,
+        "hmac": 132,
+        "rng": 32,
+        "prp": 32,
+        "encaps": 0,
+        "H": 1184
+       },
+       "out": 1120
+      },
+      {
+       "role": "I",
+       "calls": {
+        "aead": 2,
+        "sym_hash": 2,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 1,
+        "J": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 9,
+        "PRF": 7,
+        "hmac": 3
+       },
+       "nbytes": {
+        "aead": 1120,
+        "sym_hash": 1184,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 64,
+        "J": 1120,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 306,
+        "PRF": 231,
+        "hmac": 66
+       },
+       "out": 0
+      }
+     ]
+    },
+    "KEMTLS-mutual|XX": {
+     "flows": 6,
+     "bytes": 7044,
+     "messages": [
+      [
+       "I",
+       1218
+      ],
+      [
+       "R",
+       2322
+      ],
+      [
+       "I",
+       2304
+      ],
+      [
+       "R",
+       1104
+      ],
+      [
+       "I",
+       48
+      ],
+      [
+       "R",
+       48
+      ]
+     ],
+     "state_I": 2536,
+     "state_R": 200,
+     "static_secret": 1184,
+     "peak_mem": 262790,
+     "retained_mem": 8217,
+     "retained_steps": [
+      6518,
+      8217,
+      6048,
+      4880,
+      3856,
+      3718,
+      3467
+     ],
+     "calls": {
+      "keygen": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 7,
+      "xof": 63,
+      "PRF": 48,
+      "H": 4,
+      "rng": 2,
+      "sym_hash": 16,
+      "hmac": 46,
+      "encaps": 3,
+      "pke_enc": 6,
+      "aead": 12,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3
+     },
+     "nbytes": {
+      "keygen": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 2142,
+      "PRF": 1584,
+      "H": 4736,
+      "rng": 64,
+      "sym_hash": 14088,
+      "hmac": 1408,
+      "encaps": 0,
+      "pke_enc": 0,
+      "aead": 9312,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 3360
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "keygen": 1,
+        "pke_keygen": 1,
+        "G": 1,
+        "matrix": 1,
+        "xof": 9,
+        "PRF": 6,
+        "H": 1,
+        "rng": 1,
+        "sym_hash": 1,
+        "hmac": 2
+       },
+       "nbytes": {
+        "keygen": 0,
+        "pke_keygen": 0,
+        "G": 33,
+        "matrix": 0,
+        "xof": 306,
+        "PRF": 198,
+        "H": 1184,
+        "rng": 32,
+        "sym_hash": 1218,
+        "hmac": 50
+       },
+       "out": 1218
+      },
+      {
+       "role": "R",
+       "calls": {
+        "sym_hash": 3,
+        "hmac": 7,
+        "encaps": 1,
+        "H": 1,
+        "G": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 9,
+        "PRF": 7,
+        "rng": 1,
+        "aead": 1
+       },
+       "nbytes": {
+        "sym_hash": 3540,
+        "hmac": 224,
+        "encaps": 0,
+        "H": 1184,
+        "G": 64,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 306,
+        "PRF": 231,
+        "rng": 32,
+        "aead": 1184
+       },
+       "out": 2322
+      },
+      {
+       "role": "I",
+       "calls": {
+        "sym_hash": 4,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 2,
+        "J": 1,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 18,
+        "PRF": 14,
+        "hmac": 11,
+        "aead": 3,
+        "encaps": 1,
+        "H": 1
+       },
+       "nbytes": {
+        "sym_hash": 4626,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 1120,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 612,
+        "PRF": 462,
+        "hmac": 364,
+        "aead": 3472,
+        "encaps": 0,
+        "H": 1184
+       },
+       "out": 2304
+      },
+      {
+       "role": "R",
+       "calls": {
+        "hmac": 8,
+        "aead": 3,
+        "sym_hash": 3,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 2,
+        "J": 1,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 18,
+        "PRF": 14,
+        "encaps": 1,
+        "H": 1
+       },
+       "nbytes": {
+        "hmac": 236,
+        "aead": 3392,
+        "sym_hash": 3408,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 1120,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 612,
+        "PRF": 462,
+        "encaps": 0,
+        "H": 1184
+       },
+       "out": 1104
+      },
+      {
+       "role": "I",
+       "calls": {
+        "hmac": 6,
+        "aead": 2,
+        "sym_hash": 2,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 1,
+        "J": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 9,
+        "PRF": 7
+       },
+       "nbytes": {
+        "hmac": 168,
+        "aead": 1136,
+        "sym_hash": 1152,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 64,
+        "J": 1120,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 306,
+        "PRF": 231
+       },
+       "out": 48
+      },
+      {
+       "role": "R",
+       "calls": {
+        "hmac": 8,
+        "aead": 2,
+        "sym_hash": 2
+       },
+       "nbytes": {
+        "hmac": 244,
+        "aead": 80,
+        "sym_hash": 96
+       },
+       "out": 48
+      },
+      {
+       "role": "I",
+       "calls": {
+        "hmac": 4,
+        "aead": 1,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "hmac": 122,
+        "aead": 48,
+        "sym_hash": 48
+       },
+       "out": 0
+      }
+     ]
+    },
+    "PKX-ML (ours)|XX": {
+     "flows": 4,
+     "bytes": 6816,
+     "messages": [
+      [
+       "I",
+       1184
+      ],
+      [
+       "R",
+       2272
+      ],
+      [
+       "I",
+       2272
+      ],
+      [
+       "R",
+       1088
+      ]
+     ],
+     "state_I": 1184,
+     "state_R": 32,
+     "static_secret": 1184,
+     "peak_mem": 258594,
+     "retained_mem": 6004,
+     "retained_steps": [
+      4555,
+      6004,
+      5036,
+      3884,
+      2730
+     ],
+     "calls": {
+      "rng": 4,
+      "keygen_eph": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 6,
+      "xof": 54,
+      "PRF": 41,
+      "H": 4,
+      "encaps": 3,
+      "pke_enc": 5,
+      "sym_hash": 6,
+      "otp": 4,
+      "decaps_light": 1,
+      "pke_dec": 3,
+      "decaps_full": 2,
+      "J": 2
+     },
+     "nbytes": {
+      "rng": 128,
+      "keygen_eph": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 1836,
+      "PRF": 1353,
+      "H": 4736,
+      "encaps": 0,
+      "pke_enc": 0,
+      "sym_hash": 2650,
+      "otp": 4736,
+      "decaps_light": 0,
+      "pke_dec": 0,
+      "decaps_full": 0,
+      "J": 2240
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "rng": 1,
+        "keygen_eph": 1,
+        "pke_keygen": 1,
+        "G": 1,
+        "matrix": 1,
+        "xof": 9,
+        "PRF": 6,
+        "H": 1
+       },
+       "nbytes": {
+        "rng": 32,
+        "keygen_eph": 0,
+        "pke_keygen": 0,
+        "G": 33,
+        "matrix": 0,
+        "xof": 306,
+        "PRF": 198,
+        "H": 1184
+       },
+       "out": 1184
+      },
+      {
+       "role": "R",
+       "calls": {
+        "rng": 1,
+        "encaps": 1,
+        "H": 1,
+        "G": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 9,
+        "PRF": 7,
+        "sym_hash": 1,
+        "otp": 1
+       },
+       "nbytes": {
+        "rng": 32,
+        "encaps": 0,
+        "H": 1184,
+        "G": 64,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 306,
+        "PRF": 231,
+        "sym_hash": 1131,
+        "otp": 1184
+       },
+       "out": 2272
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_light": 1,
+        "pke_dec": 1,
+        "G": 2,
+        "sym_hash": 2,
+        "otp": 2,
+        "rng": 1,
+        "encaps": 1,
+        "H": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 9,
+        "PRF": 7
+       },
+       "nbytes": {
+        "decaps_light": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "sym_hash": 1208,
+        "otp": 2368,
+        "rng": 32,
+        "encaps": 0,
+        "H": 1184,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 306,
+        "PRF": 231
+       },
+       "out": 2272
+      },
+      {
+       "role": "R",
+       "calls": {
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 2,
+        "J": 1,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 18,
+        "PRF": 14,
+        "otp": 1,
+        "rng": 1,
+        "sym_hash": 2,
+        "encaps": 1,
+        "H": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 1120,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 612,
+        "PRF": 462,
+        "otp": 1184,
+        "rng": 32,
+        "sym_hash": 194,
+        "encaps": 0,
+        "H": 1184
+       },
+       "out": 1088
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 1,
+        "J": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 9,
+        "PRF": 7,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 64,
+        "J": 1120,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 306,
+        "PRF": 231,
+        "sym_hash": 117
+       },
+       "out": 0
+      }
+     ]
+    }
+   }
+  },
+  "1024": {
+   "timing": {
+    "KEX-KKE|KK": {
+     "name": "KEX-KKE",
+     "setting": "KK",
+     "reference": "dowling2026kex",
+     "median_us": 4185.291501926258,
+     "p10_us": 4066.250054165721,
+     "p25_us": 4088.749992661178,
+     "p75_us": 4334.0830015949905,
+     "p90_us": 4383.583029266447,
+     "min_us": 4037.1250361204147,
+     "mean_us": 4217.564382648561
+    },
+    "PQNoise-KK|KK": {
+     "name": "PQNoise-KK",
+     "setting": "KK",
+     "reference": "angel2022pqnoise",
+     "median_us": 4295.041522709653,
+     "p10_us": 4163.750039879233,
+     "p25_us": 4189.541970845312,
+     "p75_us": 4439.709009602666,
+     "p90_us": 4490.291990805417,
+     "min_us": 4141.874960623682,
+     "mean_us": 4324.273465026636
+    },
+    "PQ-WireGuard|KK": {
+     "name": "PQ-WireGuard",
+     "setting": "KK",
+     "reference": "hulsing2021pqwg",
+     "median_us": 3844.0414937213063,
+     "p10_us": 3733.0829654820263,
+     "p25_us": 3753.16699501127,
+     "p75_us": 3980.29200732708,
+     "p90_us": 4026.7910226248205,
+     "min_us": 3710.583026986569,
+     "mean_us": 3879.268993929145
+    },
+    "Kyber.AKE|KK": {
+     "name": "Kyber.AKE",
+     "setting": "KK",
+     "reference": "bos2018kyber",
+     "median_us": 4185.958008747548,
+     "p10_us": 4065.0410228408873,
+     "p25_us": 4088.0829910747707,
+     "p75_us": 4331.375006586313,
+     "p90_us": 4382.999963127077,
+     "min_us": 4038.084007333964,
+     "mean_us": 4216.730067200842
+    },
+    "FO-AKE|KK": {
+     "name": "FO-AKE",
+     "setting": "KK",
+     "reference": "hksu2020",
+     "median_us": 3664.1875049099326,
+     "p10_us": 3557.290998287499,
+     "p25_us": 3577.750001568347,
+     "p75_us": 3794.333024416119,
+     "p90_us": 3839.750017505139,
+     "min_us": 3537.4999861232936,
+     "mean_us": 3692.4908591608983
+    },
+    "PWZ-AKE|KK": {
+     "name": "PWZ-AKE",
+     "setting": "KK",
+     "reference": "pwz2023tighter",
+     "median_us": 4208.395985187963,
+     "p10_us": 4082.583007402718,
+     "p25_us": 4107.1249870583415,
+     "p75_us": 4352.916032075882,
+     "p90_us": 4402.291029691696,
+     "min_us": 4055.6250023655593,
+     "mean_us": 4236.402593407547
+    },
+    "PKX-ML (ours)|KK": {
+     "name": "PKX-ML (ours)",
+     "setting": "KK",
+     "reference": "this work",
+     "median_us": 3654.7500058077276,
+     "p10_us": 3547.0000002533197,
+     "p25_us": 3567.415988072753,
+     "p75_us": 3782.167041208595,
+     "p90_us": 3829.95797554031,
+     "min_us": 3526.707994751632,
+     "mean_us": 3682.2950543282786
+    },
+    "KEX-TTE|XX": {
+     "name": "KEX-TTE",
+     "setting": "XX",
+     "reference": "dowling2026kex",
+     "median_us": 4284.208494937047,
+     "p10_us": 4107.624990865588,
+     "p25_us": 4147.542000282556,
+     "p75_us": 4377.916979137808,
+     "p90_us": 4423.29200450331,
+     "min_us": 4075.2500062808394,
+     "mean_us": 4276.743266702397
+    },
+    "PQNoise-XX|XX": {
+     "name": "PQNoise-XX",
+     "setting": "XX",
+     "reference": "angel2022pqnoise",
+     "median_us": 4423.750011483207,
+     "p10_us": 4233.249987009913,
+     "p25_us": 4276.33395884186,
+     "p75_us": 4514.999978709966,
+     "p90_us": 4561.375011689961,
+     "min_us": 4195.415996946394,
+     "mean_us": 4410.883397606085
+    },
+    "KEMTLS-mutual|XX": {
+     "name": "KEMTLS-mutual",
+     "setting": "XX",
+     "reference": "ssw2020kemtls",
+     "median_us": 4438.020987436175,
+     "p10_us": 4257.874970789999,
+     "p25_us": 4297.583014704287,
+     "p75_us": 4537.332977633923,
+     "p90_us": 4587.083007209003,
+     "min_us": 4223.749972879887,
+     "mean_us": 4431.121626650565
+    },
+    "PKX-ML (ours)|XX": {
+     "name": "PKX-ML (ours)",
+     "setting": "XX",
+     "reference": "this work",
+     "median_us": 3779.6879769302905,
+     "p10_us": 3621.125011704862,
+     "p25_us": 3655.541979242116,
+     "p75_us": 3862.916026264429,
+     "p90_us": 3905.042016413063,
+     "min_us": 3590.5829863622785,
+     "mean_us": 3770.959502129699
+    }
+   },
+   "profile": {
+    "KEX-KKE|KK": {
+     "flows": 2,
+     "bytes": 6272,
+     "messages": [
+      [
+       "I",
+       3136
+      ],
+      [
+       "R",
+       3136
+      ]
+     ],
+     "state_I": 3200,
+     "state_R": 0,
+     "static_secret": 1568,
+     "peak_mem": 327409,
+     "retained_mem": 8436,
+     "retained_steps": [
+      8187,
+      8436,
+      2098
+     ],
+     "calls": {
+      "keygen": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 7,
+      "xof": 112,
+      "PRF": 62,
+      "H": 2,
+      "encaps": 3,
+      "pke_enc": 6,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3,
+      "sym_hash": 2
+     },
+     "nbytes": {
+      "keygen": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 3808,
+      "PRF": 2046,
+      "H": 3136,
+      "encaps": 0,
+      "pke_enc": 0,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 4800,
+      "sym_hash": 192
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "keygen": 1,
+        "pke_keygen": 1,
+        "G": 2,
+        "matrix": 2,
+        "xof": 32,
+        "PRF": 17,
+        "H": 1,
+        "encaps": 1,
+        "pke_enc": 1
+       },
+       "nbytes": {
+        "keygen": 0,
+        "pke_keygen": 0,
+        "G": 97,
+        "matrix": 0,
+        "xof": 1088,
+        "PRF": 561,
+        "H": 1568,
+        "encaps": 0,
+        "pke_enc": 0
+       },
+       "out": 3136
+      },
+      {
+       "role": "R",
+       "calls": {
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 3,
+        "J": 1,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 48,
+        "PRF": 27,
+        "encaps": 2,
+        "H": 1,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 192,
+        "J": 1600,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 1632,
+        "PRF": 891,
+        "encaps": 0,
+        "H": 1568,
+        "sym_hash": 96
+       },
+       "out": 3136
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_full": 2,
+        "pke_dec": 2,
+        "G": 2,
+        "J": 2,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 32,
+        "PRF": 18,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 3200,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 1088,
+        "PRF": 594,
+        "sym_hash": 96
+       },
+       "out": 0
+      }
+     ]
+    },
+    "PQNoise-KK|KK": {
+     "flows": 2,
+     "bytes": 6320,
+     "messages": [
+      [
+       "I",
+       3152
+      ],
+      [
+       "R",
+       3168
+      ]
+     ],
+     "state_I": 3240,
+     "state_R": 0,
+     "static_secret": 1600,
+     "peak_mem": 328099,
+     "retained_mem": 8837,
+     "retained_steps": [
+      8540,
+      8837,
+      2274
+     ],
+     "calls": {
+      "sym_hash": 12,
+      "rng": 4,
+      "prp": 4,
+      "encaps": 3,
+      "G": 7,
+      "pke_enc": 6,
+      "matrix": 7,
+      "xof": 112,
+      "PRF": 62,
+      "hmac": 18,
+      "keygen": 1,
+      "pke_keygen": 1,
+      "H": 2,
+      "aead": 6,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3
+     },
+     "nbytes": {
+      "sym_hash": 12980,
+      "rng": 160,
+      "prp": 160,
+      "encaps": 0,
+      "G": 417,
+      "pke_enc": 0,
+      "matrix": 0,
+      "xof": 3808,
+      "PRF": 2046,
+      "hmac": 396,
+      "keygen": 0,
+      "pke_keygen": 0,
+      "H": 3136,
+      "aead": 6320,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 4800
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "sym_hash": 3,
+        "rng": 2,
+        "prp": 2,
+        "encaps": 1,
+        "G": 2,
+        "pke_enc": 1,
+        "matrix": 2,
+        "xof": 32,
+        "PRF": 17,
+        "hmac": 3,
+        "keygen": 1,
+        "pke_keygen": 1,
+        "H": 1,
+        "aead": 1
+       },
+       "nbytes": {
+        "sym_hash": 3226,
+        "rng": 96,
+        "prp": 96,
+        "encaps": 0,
+        "G": 97,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 1088,
+        "PRF": 561,
+        "hmac": 66,
+        "keygen": 0,
+        "pke_keygen": 0,
+        "H": 1568,
+        "aead": 1568
+       },
+       "out": 3152
+      },
+      {
+       "role": "R",
+       "calls": {
+        "sym_hash": 6,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 3,
+        "J": 1,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 48,
+        "PRF": 27,
+        "hmac": 9,
+        "aead": 3,
+        "rng": 2,
+        "prp": 2,
+        "encaps": 2,
+        "H": 1
+       },
+       "nbytes": {
+        "sym_hash": 6490,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 192,
+        "J": 1600,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 1632,
+        "PRF": 891,
+        "hmac": 198,
+        "aead": 3152,
+        "rng": 64,
+        "prp": 64,
+        "encaps": 0,
+        "H": 1568
+       },
+       "out": 3168
+      },
+      {
+       "role": "I",
+       "calls": {
+        "sym_hash": 3,
+        "decaps_full": 2,
+        "pke_dec": 2,
+        "G": 2,
+        "J": 2,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 32,
+        "PRF": 18,
+        "hmac": 6,
+        "aead": 2
+       },
+       "nbytes": {
+        "sym_hash": 3264,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 3200,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 1088,
+        "PRF": 594,
+        "hmac": 132,
+        "aead": 1600
+       },
+       "out": 0
+      }
+     ]
+    },
+    "PQ-WireGuard|KK": {
+     "flows": 3,
+     "bytes": 6508,
+     "messages": [
+      [
+       "I",
+       3252
+      ],
+      [
+       "R",
+       3196
+      ],
+      [
+       "I",
+       60
+      ]
+     ],
+     "state_I": 1636,
+     "state_R": 104,
+     "static_secret": 1600,
+     "peak_mem": 330026,
+     "retained_mem": 7747,
+     "retained_steps": [
+      7350,
+      7747,
+      3059,
+      2826
+     ],
+     "calls": {
+      "rng": 6,
+      "keygen_eph": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 6,
+      "xof": 96,
+      "PRF": 53,
+      "H": 2,
+      "hmac": 52,
+      "encaps": 3,
+      "pke_enc": 5,
+      "sym_hash": 12,
+      "aead": 8,
+      "mac": 12,
+      "decaps_full": 2,
+      "pke_dec": 3,
+      "J": 2,
+      "decaps_light": 1
+     },
+     "nbytes": {
+      "rng": 136,
+      "keygen_eph": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 3264,
+      "PRF": 1749,
+      "H": 3136,
+      "hmac": 7072,
+      "encaps": 0,
+      "pke_enc": 0,
+      "sym_hash": 6904,
+      "aead": 152,
+      "mac": 25744,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 3200,
+      "decaps_light": 0
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "rng": 3,
+        "keygen_eph": 1,
+        "pke_keygen": 1,
+        "G": 2,
+        "matrix": 2,
+        "xof": 32,
+        "PRF": 17,
+        "H": 1,
+        "hmac": 10,
+        "encaps": 1,
+        "pke_enc": 1,
+        "sym_hash": 3,
+        "aead": 2,
+        "mac": 2
+       },
+       "nbytes": {
+        "rng": 68,
+        "keygen_eph": 0,
+        "pke_keygen": 0,
+        "G": 97,
+        "matrix": 0,
+        "xof": 1088,
+        "PRF": 561,
+        "H": 1568,
+        "hmac": 1734,
+        "encaps": 0,
+        "pke_enc": 0,
+        "sym_hash": 1740,
+        "aead": 44,
+        "mac": 6456
+       },
+       "out": 3252
+      },
+      {
+       "role": "R",
+       "calls": {
+        "mac": 4,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 3,
+        "J": 1,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 48,
+        "PRF": 27,
+        "hmac": 23,
+        "sym_hash": 6,
+        "aead": 3,
+        "rng": 3,
+        "encaps": 2,
+        "H": 1
+       },
+       "nbytes": {
+        "mac": 12800,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 192,
+        "J": 1600,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 1632,
+        "PRF": 891,
+        "hmac": 3502,
+        "sym_hash": 3452,
+        "aead": 76,
+        "rng": 68,
+        "encaps": 0,
+        "H": 1568
+       },
+       "out": 3196
+      },
+      {
+       "role": "I",
+       "calls": {
+        "mac": 4,
+        "decaps_light": 1,
+        "pke_dec": 2,
+        "G": 2,
+        "decaps_full": 1,
+        "J": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 16,
+        "PRF": 9,
+        "hmac": 16,
+        "sym_hash": 3,
+        "aead": 2
+       },
+       "nbytes": {
+        "mac": 6416,
+        "decaps_light": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "decaps_full": 0,
+        "J": 1600,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 544,
+        "PRF": 297,
+        "hmac": 1802,
+        "sym_hash": 1712,
+        "aead": 16
+       },
+       "out": 60
+      },
+      {
+       "role": "R",
+       "calls": {
+        "mac": 2,
+        "aead": 1,
+        "hmac": 3
+       },
+       "nbytes": {
+        "mac": 72,
+        "aead": 16,
+        "hmac": 34
+       },
+       "out": 0
+      }
+     ]
+    },
+    "Kyber.AKE|KK": {
+     "flows": 2,
+     "bytes": 6272,
+     "messages": [
+      [
+       "I",
+       3136
+      ],
+      [
+       "R",
+       3136
+      ]
+     ],
+     "state_I": 3200,
+     "state_R": 0,
+     "static_secret": 1568,
+     "peak_mem": 329140,
+     "retained_mem": 8436,
+     "retained_steps": [
+      8187,
+      8436,
+      2098
+     ],
+     "calls": {
+      "keygen": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 7,
+      "xof": 112,
+      "PRF": 62,
+      "H": 2,
+      "encaps": 3,
+      "pke_enc": 6,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3,
+      "sym_hash": 2
+     },
+     "nbytes": {
+      "keygen": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 3808,
+      "PRF": 2046,
+      "H": 3136,
+      "encaps": 0,
+      "pke_enc": 0,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 4800,
+      "sym_hash": 192
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "keygen": 1,
+        "pke_keygen": 1,
+        "G": 2,
+        "matrix": 2,
+        "xof": 32,
+        "PRF": 17,
+        "H": 1,
+        "encaps": 1,
+        "pke_enc": 1
+       },
+       "nbytes": {
+        "keygen": 0,
+        "pke_keygen": 0,
+        "G": 97,
+        "matrix": 0,
+        "xof": 1088,
+        "PRF": 561,
+        "H": 1568,
+        "encaps": 0,
+        "pke_enc": 0
+       },
+       "out": 3136
+      },
+      {
+       "role": "R",
+       "calls": {
+        "encaps": 2,
+        "H": 1,
+        "G": 3,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 48,
+        "PRF": 27,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "J": 1,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "encaps": 0,
+        "H": 1568,
+        "G": 192,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 1632,
+        "PRF": 891,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "J": 1600,
+        "sym_hash": 96
+       },
+       "out": 3136
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_full": 2,
+        "pke_dec": 2,
+        "G": 2,
+        "J": 2,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 32,
+        "PRF": 18,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 3200,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 1088,
+        "PRF": 594,
+        "sym_hash": 96
+       },
+       "out": 0
+      }
+     ]
+    },
+    "FO-AKE|KK": {
+     "flows": 2,
+     "bytes": 6272,
+     "messages": [
+      [
+       "I",
+       3136
+      ],
+      [
+       "R",
+       3136
+      ]
+     ],
+     "state_I": 4704,
+     "state_R": 0,
+     "static_secret": 1568,
+     "peak_mem": 328993,
+     "retained_mem": 9997,
+     "retained_steps": [
+      6579,
+      9997,
+      2122
+     ],
+     "calls": {
+      "rng": 4,
+      "sym_hash": 7,
+      "pke_enc": 5,
+      "matrix": 6,
+      "xof": 96,
+      "PRF": 53,
+      "pke_keygen": 1,
+      "G": 1,
+      "pke_dec": 3,
+      "hmac": 2
+     },
+     "nbytes": {
+      "rng": 128,
+      "sym_hash": 13009,
+      "pke_enc": 0,
+      "matrix": 0,
+      "xof": 3264,
+      "PRF": 1749,
+      "pke_keygen": 0,
+      "G": 33,
+      "pke_dec": 0,
+      "hmac": 15888
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "rng": 2,
+        "sym_hash": 1,
+        "pke_enc": 1,
+        "matrix": 2,
+        "xof": 32,
+        "PRF": 17,
+        "pke_keygen": 1,
+        "G": 1
+       },
+       "nbytes": {
+        "rng": 64,
+        "sym_hash": 39,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 1088,
+        "PRF": 561,
+        "pke_keygen": 0,
+        "G": 33
+       },
+       "out": 3136
+      },
+      {
+       "role": "R",
+       "calls": {
+        "rng": 2,
+        "sym_hash": 4,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 48,
+        "PRF": 27,
+        "pke_dec": 1,
+        "hmac": 1
+       },
+       "nbytes": {
+        "rng": 64,
+        "sym_hash": 6524,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 1632,
+        "PRF": 891,
+        "pke_dec": 0,
+        "hmac": 7944
+       },
+       "out": 3136
+      },
+      {
+       "role": "I",
+       "calls": {
+        "pke_dec": 2,
+        "sym_hash": 2,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 16,
+        "PRF": 9,
+        "hmac": 1
+       },
+       "nbytes": {
+        "pke_dec": 0,
+        "sym_hash": 6446,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 544,
+        "PRF": 297,
+        "hmac": 7944
+       },
+       "out": 0
+      }
+     ]
+    },
+    "PWZ-AKE|KK": {
+     "flows": 2,
+     "bytes": 6272,
+     "messages": [
+      [
+       "I",
+       3136
+      ],
+      [
+       "R",
+       3136
+      ]
+     ],
+     "state_I": 6336,
+     "state_R": 0,
+     "static_secret": 1568,
+     "peak_mem": 330881,
+     "retained_mem": 11654,
+     "retained_steps": [
+      11405,
+      11654,
+      2114
+     ],
+     "calls": {
+      "keygen": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 7,
+      "xof": 112,
+      "PRF": 62,
+      "H": 2,
+      "encaps": 3,
+      "pke_enc": 6,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3,
+      "sym_hash": 2
+     },
+     "nbytes": {
+      "keygen": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 3808,
+      "PRF": 2046,
+      "H": 3136,
+      "encaps": 0,
+      "pke_enc": 0,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 4800,
+      "sym_hash": 12736
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "keygen": 1,
+        "pke_keygen": 1,
+        "G": 2,
+        "matrix": 2,
+        "xof": 32,
+        "PRF": 17,
+        "H": 1,
+        "encaps": 1,
+        "pke_enc": 1
+       },
+       "nbytes": {
+        "keygen": 0,
+        "pke_keygen": 0,
+        "G": 97,
+        "matrix": 0,
+        "xof": 1088,
+        "PRF": 561,
+        "H": 1568,
+        "encaps": 0,
+        "pke_enc": 0
+       },
+       "out": 3136
+      },
+      {
+       "role": "R",
+       "calls": {
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 3,
+        "J": 1,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 48,
+        "PRF": 27,
+        "encaps": 2,
+        "H": 1,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 192,
+        "J": 1600,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 1632,
+        "PRF": 891,
+        "encaps": 0,
+        "H": 1568,
+        "sym_hash": 6368
+       },
+       "out": 3136
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_full": 2,
+        "pke_dec": 2,
+        "G": 2,
+        "J": 2,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 32,
+        "PRF": 18,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 3200,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 1088,
+        "PRF": 594,
+        "sym_hash": 6368
+       },
+       "out": 0
+      }
+     ]
+    },
+    "PKX-ML (ours)|KK": {
+     "flows": 2,
+     "bytes": 6272,
+     "messages": [
+      [
+       "I",
+       3136
+      ],
+      [
+       "R",
+       3136
+      ]
+     ],
+     "state_I": 1600,
+     "state_R": 0,
+     "static_secret": 1568,
+     "peak_mem": 326239,
+     "retained_mem": 7005,
+     "retained_steps": [
+      6876,
+      7005,
+      2234
+     ],
+     "calls": {
+      "rng": 2,
+      "keygen_eph": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 6,
+      "xof": 96,
+      "PRF": 53,
+      "H": 2,
+      "sym_hash": 6,
+      "encaps": 3,
+      "pke_enc": 5,
+      "decaps_full": 2,
+      "pke_dec": 3,
+      "J": 2,
+      "decaps_light": 1
+     },
+     "nbytes": {
+      "rng": 128,
+      "keygen_eph": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 3264,
+      "PRF": 1749,
+      "H": 3136,
+      "sym_hash": 3676,
+      "encaps": 0,
+      "pke_enc": 0,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 3200,
+      "decaps_light": 0
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "rng": 1,
+        "keygen_eph": 1,
+        "pke_keygen": 1,
+        "G": 2,
+        "matrix": 2,
+        "xof": 32,
+        "PRF": 17,
+        "H": 1,
+        "sym_hash": 1,
+        "encaps": 1,
+        "pke_enc": 1
+       },
+       "nbytes": {
+        "rng": 64,
+        "keygen_eph": 0,
+        "pke_keygen": 0,
+        "G": 97,
+        "matrix": 0,
+        "xof": 1088,
+        "PRF": 561,
+        "H": 1568,
+        "sym_hash": 77,
+        "encaps": 0,
+        "pke_enc": 0
+       },
+       "out": 3136
+      },
+      {
+       "role": "R",
+       "calls": {
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 3,
+        "J": 1,
+        "pke_enc": 3,
+        "matrix": 3,
+        "xof": 48,
+        "PRF": 27,
+        "rng": 1,
+        "encaps": 2,
+        "H": 1,
+        "sym_hash": 3
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 192,
+        "J": 1600,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 1632,
+        "PRF": 891,
+        "rng": 64,
+        "encaps": 0,
+        "H": 1568,
+        "sym_hash": 1838
+       },
+       "out": 3136
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_light": 1,
+        "pke_dec": 2,
+        "G": 2,
+        "sym_hash": 2,
+        "decaps_full": 1,
+        "J": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 16,
+        "PRF": 9
+       },
+       "nbytes": {
+        "decaps_light": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "sym_hash": 1761,
+        "decaps_full": 0,
+        "J": 1600,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 544,
+        "PRF": 297
+       },
+       "out": 0
+      }
+     ]
+    },
+    "KEX-TTE|XX": {
+     "flows": 4,
+     "bytes": 9408,
+     "messages": [
+      [
+       "I",
+       1568
+      ],
+      [
+       "R",
+       3136
+      ],
+      [
+       "I",
+       3136
+      ],
+      [
+       "R",
+       1568
+      ]
+     ],
+     "state_I": 3168,
+     "state_R": 32,
+     "static_secret": 1568,
+     "peak_mem": 327870,
+     "retained_mem": 8819,
+     "retained_steps": [
+      6890,
+      8819,
+      5900,
+      4364,
+      2730
+     ],
+     "calls": {
+      "keygen": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 7,
+      "xof": 112,
+      "PRF": 62,
+      "H": 4,
+      "encaps": 3,
+      "pke_enc": 6,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3,
+      "sym_hash": 2
+     },
+     "nbytes": {
+      "keygen": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 3808,
+      "PRF": 2046,
+      "H": 6272,
+      "encaps": 0,
+      "pke_enc": 0,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 4800,
+      "sym_hash": 192
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "keygen": 1,
+        "pke_keygen": 1,
+        "G": 1,
+        "matrix": 1,
+        "xof": 16,
+        "PRF": 8,
+        "H": 1
+       },
+       "nbytes": {
+        "keygen": 0,
+        "pke_keygen": 0,
+        "G": 33,
+        "matrix": 0,
+        "xof": 544,
+        "PRF": 264,
+        "H": 1568
+       },
+       "out": 1568
+      },
+      {
+       "role": "R",
+       "calls": {
+        "encaps": 1,
+        "H": 1,
+        "G": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 16,
+        "PRF": 9
+       },
+       "nbytes": {
+        "encaps": 0,
+        "H": 1568,
+        "G": 64,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 544,
+        "PRF": 297
+       },
+       "out": 3136
+      },
+      {
+       "role": "I",
+       "calls": {
+        "encaps": 1,
+        "H": 1,
+        "G": 2,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 32,
+        "PRF": 18,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "J": 1
+       },
+       "nbytes": {
+        "encaps": 0,
+        "H": 1568,
+        "G": 128,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 1088,
+        "PRF": 594,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "J": 1600
+       },
+       "out": 3136
+      },
+      {
+       "role": "R",
+       "calls": {
+        "encaps": 1,
+        "H": 1,
+        "G": 2,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 32,
+        "PRF": 18,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "J": 1,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "encaps": 0,
+        "H": 1568,
+        "G": 128,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 1088,
+        "PRF": 594,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "J": 1600,
+        "sym_hash": 96
+       },
+       "out": 1568
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 1,
+        "J": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 16,
+        "PRF": 9,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 64,
+        "J": 1600,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 544,
+        "PRF": 297,
+        "sym_hash": 96
+       },
+       "out": 0
+      }
+     ]
+    },
+    "PQNoise-XX|XX": {
+     "flows": 4,
+     "bytes": 9488,
+     "messages": [
+      [
+       "I",
+       1568
+      ],
+      [
+       "R",
+       3152
+      ],
+      [
+       "I",
+       3168
+      ],
+      [
+       "R",
+       1600
+      ]
+     ],
+     "state_I": 3232,
+     "state_R": 104,
+     "static_secret": 1600,
+     "peak_mem": 326985,
+     "retained_mem": 9559,
+     "retained_steps": [
+      7324,
+      9559,
+      6591,
+      4797,
+      2938
+     ],
+     "calls": {
+      "sym_hash": 20,
+      "rng": 4,
+      "prp": 4,
+      "keygen": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 7,
+      "xof": 112,
+      "PRF": 62,
+      "H": 4,
+      "encaps": 3,
+      "pke_enc": 6,
+      "hmac": 18,
+      "aead": 10,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3
+     },
+     "nbytes": {
+      "sym_hash": 19528,
+      "rng": 160,
+      "prp": 160,
+      "keygen": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 3808,
+      "PRF": 2046,
+      "H": 6272,
+      "encaps": 0,
+      "pke_enc": 0,
+      "hmac": 396,
+      "aead": 12624,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 4800
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "sym_hash": 4,
+        "rng": 1,
+        "prp": 1,
+        "keygen": 1,
+        "pke_keygen": 1,
+        "G": 1,
+        "matrix": 1,
+        "xof": 16,
+        "PRF": 8,
+        "H": 1
+       },
+       "nbytes": {
+        "sym_hash": 1652,
+        "rng": 64,
+        "prp": 64,
+        "keygen": 0,
+        "pke_keygen": 0,
+        "G": 33,
+        "matrix": 0,
+        "xof": 544,
+        "PRF": 264,
+        "H": 1568
+       },
+       "out": 1568
+      },
+      {
+       "role": "R",
+       "calls": {
+        "sym_hash": 6,
+        "rng": 1,
+        "prp": 1,
+        "encaps": 1,
+        "H": 1,
+        "G": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 16,
+        "PRF": 9,
+        "hmac": 3,
+        "aead": 1
+       },
+       "nbytes": {
+        "sym_hash": 4868,
+        "rng": 32,
+        "prp": 32,
+        "encaps": 0,
+        "H": 1568,
+        "G": 64,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 544,
+        "PRF": 297,
+        "hmac": 66,
+        "aead": 1568
+       },
+       "out": 3152
+      },
+      {
+       "role": "I",
+       "calls": {
+        "sym_hash": 4,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 2,
+        "J": 1,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 32,
+        "PRF": 18,
+        "hmac": 6,
+        "aead": 3,
+        "rng": 1,
+        "prp": 1,
+        "encaps": 1,
+        "H": 1
+       },
+       "nbytes": {
+        "sym_hash": 6448,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 1600,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 1088,
+        "PRF": 594,
+        "hmac": 132,
+        "aead": 4720,
+        "rng": 32,
+        "prp": 32,
+        "encaps": 0,
+        "H": 1568
+       },
+       "out": 3168
+      },
+      {
+       "role": "R",
+       "calls": {
+        "aead": 4,
+        "sym_hash": 4,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 2,
+        "J": 1,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 32,
+        "PRF": 18,
+        "hmac": 6,
+        "rng": 1,
+        "prp": 1,
+        "encaps": 1,
+        "H": 1
+       },
+       "nbytes": {
+        "aead": 4736,
+        "sym_hash": 4896,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 1600,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 1088,
+        "PRF": 594,
+        "hmac": 132,
+        "rng": 32,
+        "prp": 32,
+        "encaps": 0,
+        "H": 1568
+       },
+       "out": 1600
+      },
+      {
+       "role": "I",
+       "calls": {
+        "aead": 2,
+        "sym_hash": 2,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 1,
+        "J": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 16,
+        "PRF": 9,
+        "hmac": 3
+       },
+       "nbytes": {
+        "aead": 1600,
+        "sym_hash": 1664,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 64,
+        "J": 1600,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 544,
+        "PRF": 297,
+        "hmac": 66
+       },
+       "out": 0
+      }
+     ]
+    },
+    "KEMTLS-mutual|XX": {
+     "flows": 6,
+     "bytes": 9636,
+     "messages": [
+      [
+       "I",
+       1602
+      ],
+      [
+       "R",
+       3186
+      ],
+      [
+       "I",
+       3168
+      ],
+      [
+       "R",
+       1584
+      ],
+      [
+       "I",
+       48
+      ],
+      [
+       "R",
+       48
+      ]
+     ],
+     "state_I": 3304,
+     "state_R": 200,
+     "static_secret": 1568,
+     "peak_mem": 330286,
+     "retained_mem": 9921,
+     "retained_steps": [
+      7742,
+      9921,
+      6984,
+      5432,
+      3928,
+      3790,
+      3539
+     ],
+     "calls": {
+      "keygen": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 7,
+      "xof": 112,
+      "PRF": 62,
+      "H": 4,
+      "rng": 2,
+      "sym_hash": 16,
+      "hmac": 46,
+      "encaps": 3,
+      "pke_enc": 6,
+      "aead": 12,
+      "decaps_full": 3,
+      "pke_dec": 3,
+      "J": 3
+     },
+     "nbytes": {
+      "keygen": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 3808,
+      "PRF": 2046,
+      "H": 6272,
+      "rng": 64,
+      "sym_hash": 19272,
+      "hmac": 1408,
+      "encaps": 0,
+      "pke_enc": 0,
+      "aead": 12768,
+      "decaps_full": 0,
+      "pke_dec": 0,
+      "J": 4800
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "keygen": 1,
+        "pke_keygen": 1,
+        "G": 1,
+        "matrix": 1,
+        "xof": 16,
+        "PRF": 8,
+        "H": 1,
+        "rng": 1,
+        "sym_hash": 1,
+        "hmac": 2
+       },
+       "nbytes": {
+        "keygen": 0,
+        "pke_keygen": 0,
+        "G": 33,
+        "matrix": 0,
+        "xof": 544,
+        "PRF": 264,
+        "H": 1568,
+        "rng": 32,
+        "sym_hash": 1602,
+        "hmac": 50
+       },
+       "out": 1602
+      },
+      {
+       "role": "R",
+       "calls": {
+        "sym_hash": 3,
+        "hmac": 7,
+        "encaps": 1,
+        "H": 1,
+        "G": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 16,
+        "PRF": 9,
+        "rng": 1,
+        "aead": 1
+       },
+       "nbytes": {
+        "sym_hash": 4788,
+        "hmac": 224,
+        "encaps": 0,
+        "H": 1568,
+        "G": 64,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 544,
+        "PRF": 297,
+        "rng": 32,
+        "aead": 1568
+       },
+       "out": 3186
+      },
+      {
+       "role": "I",
+       "calls": {
+        "sym_hash": 4,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 2,
+        "J": 1,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 32,
+        "PRF": 18,
+        "hmac": 11,
+        "aead": 3,
+        "encaps": 1,
+        "H": 1
+       },
+       "nbytes": {
+        "sym_hash": 6354,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 1600,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 1088,
+        "PRF": 594,
+        "hmac": 364,
+        "aead": 4720,
+        "encaps": 0,
+        "H": 1568
+       },
+       "out": 3168
+      },
+      {
+       "role": "R",
+       "calls": {
+        "hmac": 8,
+        "aead": 3,
+        "sym_hash": 3,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 2,
+        "J": 1,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 32,
+        "PRF": 18,
+        "encaps": 1,
+        "H": 1
+       },
+       "nbytes": {
+        "hmac": 236,
+        "aead": 4736,
+        "sym_hash": 4752,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 1600,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 1088,
+        "PRF": 594,
+        "encaps": 0,
+        "H": 1568
+       },
+       "out": 1584
+      },
+      {
+       "role": "I",
+       "calls": {
+        "hmac": 6,
+        "aead": 2,
+        "sym_hash": 2,
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 1,
+        "J": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 16,
+        "PRF": 9
+       },
+       "nbytes": {
+        "hmac": 168,
+        "aead": 1616,
+        "sym_hash": 1632,
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 64,
+        "J": 1600,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 544,
+        "PRF": 297
+       },
+       "out": 48
+      },
+      {
+       "role": "R",
+       "calls": {
+        "hmac": 8,
+        "aead": 2,
+        "sym_hash": 2
+       },
+       "nbytes": {
+        "hmac": 244,
+        "aead": 80,
+        "sym_hash": 96
+       },
+       "out": 48
+      },
+      {
+       "role": "I",
+       "calls": {
+        "hmac": 4,
+        "aead": 1,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "hmac": 122,
+        "aead": 48,
+        "sym_hash": 48
+       },
+       "out": 0
+      }
+     ]
+    },
+    "PKX-ML (ours)|XX": {
+     "flows": 4,
+     "bytes": 9408,
+     "messages": [
+      [
+       "I",
+       1568
+      ],
+      [
+       "R",
+       3136
+      ],
+      [
+       "I",
+       3136
+      ],
+      [
+       "R",
+       1568
+      ]
+     ],
+     "state_I": 1568,
+     "state_R": 32,
+     "static_secret": 1568,
+     "peak_mem": 323241,
+     "retained_mem": 7324,
+     "retained_steps": [
+      5395,
+      7324,
+      5972,
+      4436,
+      2802
+     ],
+     "calls": {
+      "rng": 4,
+      "keygen_eph": 1,
+      "pke_keygen": 1,
+      "G": 7,
+      "matrix": 6,
+      "xof": 96,
+      "PRF": 53,
+      "H": 4,
+      "encaps": 3,
+      "pke_enc": 5,
+      "sym_hash": 6,
+      "otp": 4,
+      "decaps_light": 1,
+      "pke_dec": 3,
+      "decaps_full": 2,
+      "J": 2
+     },
+     "nbytes": {
+      "rng": 128,
+      "keygen_eph": 0,
+      "pke_keygen": 0,
+      "G": 417,
+      "matrix": 0,
+      "xof": 3264,
+      "PRF": 1749,
+      "H": 6272,
+      "encaps": 0,
+      "pke_enc": 0,
+      "sym_hash": 3612,
+      "otp": 6272,
+      "decaps_light": 0,
+      "pke_dec": 0,
+      "decaps_full": 0,
+      "J": 3200
+     },
+     "steps": [
+      {
+       "role": "I",
+       "calls": {
+        "rng": 1,
+        "keygen_eph": 1,
+        "pke_keygen": 1,
+        "G": 1,
+        "matrix": 1,
+        "xof": 16,
+        "PRF": 8,
+        "H": 1
+       },
+       "nbytes": {
+        "rng": 32,
+        "keygen_eph": 0,
+        "pke_keygen": 0,
+        "G": 33,
+        "matrix": 0,
+        "xof": 544,
+        "PRF": 264,
+        "H": 1568
+       },
+       "out": 1568
+      },
+      {
+       "role": "R",
+       "calls": {
+        "rng": 1,
+        "encaps": 1,
+        "H": 1,
+        "G": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 16,
+        "PRF": 9,
+        "sym_hash": 1,
+        "otp": 1
+       },
+       "nbytes": {
+        "rng": 32,
+        "encaps": 0,
+        "H": 1568,
+        "G": 64,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 544,
+        "PRF": 297,
+        "sym_hash": 1611,
+        "otp": 1568
+       },
+       "out": 3136
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_light": 1,
+        "pke_dec": 1,
+        "G": 2,
+        "sym_hash": 2,
+        "otp": 2,
+        "rng": 1,
+        "encaps": 1,
+        "H": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 16,
+        "PRF": 9
+       },
+       "nbytes": {
+        "decaps_light": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "sym_hash": 1688,
+        "otp": 3136,
+        "rng": 32,
+        "encaps": 0,
+        "H": 1568,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 544,
+        "PRF": 297
+       },
+       "out": 3136
+      },
+      {
+       "role": "R",
+       "calls": {
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 2,
+        "J": 1,
+        "pke_enc": 2,
+        "matrix": 2,
+        "xof": 32,
+        "PRF": 18,
+        "otp": 1,
+        "rng": 1,
+        "sym_hash": 2,
+        "encaps": 1,
+        "H": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 128,
+        "J": 1600,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 1088,
+        "PRF": 594,
+        "otp": 1568,
+        "rng": 32,
+        "sym_hash": 195,
+        "encaps": 0,
+        "H": 1568
+       },
+       "out": 1568
+      },
+      {
+       "role": "I",
+       "calls": {
+        "decaps_full": 1,
+        "pke_dec": 1,
+        "G": 1,
+        "J": 1,
+        "pke_enc": 1,
+        "matrix": 1,
+        "xof": 16,
+        "PRF": 9,
+        "sym_hash": 1
+       },
+       "nbytes": {
+        "decaps_full": 0,
+        "pke_dec": 0,
+        "G": 64,
+        "J": 1600,
+        "pke_enc": 0,
+        "matrix": 0,
+        "xof": 544,
+        "PRF": 297,
+        "sym_hash": 118
+       },
+       "out": 0
+      }
+     ]
+    }
+   }
+  }
+ }
+}
